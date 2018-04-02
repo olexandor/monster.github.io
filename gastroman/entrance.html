@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Entrance page</title>
+    <meta name="description" content="Entrance page"/><meta property="og:image" content="path/to/image.jpg">
+<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="stylesheet" href="css/main.css"/><meta name="theme-color" content="#ccc">
+<meta name="msapplication-navbutton-color" content="#ccc">
+<meta name="apple-mobile-web-app-status-bar-style" content="#ccc">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__top">
+        <div class="container">
+          <div class="site-header__logo logo">
+            <div class="logo__img"><a href="index.html"><img src="./img/logo.png" alt="гастроман-логотип"/></a></div>
+            <div class="logo__content">
+              <div class="logo__title">Гастрономический <span>интернет-магазин</span></div>
+              <div class="logo__caption">Мы уникальны <br> в своём разнообразии!</div><a class="logo__location to-modal-city-location" href="#city-location">г. Сочи</a>
+            </div>
+          </div>
+          <div class="site-header__bottom-mobile">
+            <div class="site-header__menu-services">
+              <ul class="menu-services">
+                <li class="menu-services__item"><a href="recipes.html">Рецепты</a></li>
+                <li class="menu-services__item"><a href="404.html">Доставка</a></li>
+                <li class="menu-services__item"><a href="404.html">Оплата</a></li>
+                <li class="menu-services__item"><a href="store-contact.html">Контакты</a></li>
+              </ul>
+            </div>
+            <button class="mobile-nav-btn js-top-nav-open" type="button"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+            <div class="site-header__order-status"><a class="order-status" href="buyers-status.html">Статус заказа</a></div>
+            <div class="site-header__login"><a class="login" href="cabinet-profile.html">Личный кабинет</a></div>
+            <div class="site-header__search">
+              <form class="site-search" action="" id="site-search">
+                <input class="site-search__control" id="main-site-search" type="text" name="site_search" placeholder="Поиск среди 1 300 товаров"/>
+                <button class="site-search__close" type="button"></button>
+              </form>
+            </div>
+            <div class="site-header__contact"><a class="site-header__contact-phone" href="tel:+89184000739">8 (918) 400-07-39</a><a class="site-header__contact-callback to-modal-callback" href="#callback">перезвоните мне</a></div>
+            <button class="js-trigger-site-search-open" type="button"></button>
+            <div class="site-header__cart">
+              <div class="site-header__cart-action" id="header-cart-popup-trigger"><a class="site-header__cart-link" href="cart.html"></a><span class="site-header__cart-badge">100</span>
+                <div class="cart-popup" id="header-cart-popup-products">
+                  <form class="cart-popup__inner" action="">
+                    <div class="cart-popup__head">Корзина
+                      <button class="cart-popup__remove-all" type="button">Удалить все</button>
+                    </div>
+                    <div class="cart-popup__products">
+                      <ul class="cart-popup__products-list">
+                        <li class="cart-popup__products-item">
+                          <div class="cart-popup__products-img"><a href="card.html"><img src="./img/product-2.jpg" alt="Масло оливковое"/></a></div>
+                          <div class="cart-popup__products-title">Масло оливковое c ароматом черного трюфеля RANIERI 1 кг.</div>
+                          <div class="cart-popup__products-price">148 450 руб.</div>
+                          <button class="cart-popup__products-remove" type="button"></button>
+                        </li>
+                        <li class="cart-popup__products-item">
+                          <div class="cart-popup__products-img"><a href="card.html"><img src="./img/product-3.jpg" alt="Масло оливковое"/></a></div>
+                          <div class="cart-popup__products-title">Масло оливковое c ароматом черного трюфеля RANIERI 1 кг.</div>
+                          <div class="cart-popup__products-price">148 450 руб.</div>
+                          <button class="cart-popup__products-remove" type="button"></button>
+                        </li>
+                        <li class="cart-popup__products-item">
+                          <div class="cart-popup__products-img"><a href="card.html"><img src="./img/product-2.jpg" alt="Масло оливковое"/></a></div>
+                          <div class="cart-popup__products-title">Масло оливковое c ароматом черного трюфеля RANIERI 1 кг.</div>
+                          <div class="cart-popup__products-price">148 450 руб.</div>
+                          <button class="cart-popup__products-remove" type="button"></button>
+                        </li>
+                        <li class="cart-popup__products-item">
+                          <div class="cart-popup__products-img"><a href="card.html"><img src="./img/product-3.jpg" alt="Масло оливковое"/></a></div>
+                          <div class="cart-popup__products-title">Масло оливковое c ароматом черного трюфеля RANIERI 1 кг.</div>
+                          <div class="cart-popup__products-price">148 450 руб.</div>
+                          <button class="cart-popup__products-remove" type="button"></button>
+                        </li>
+                        <li class="cart-popup__products-item">
+                          <div class="cart-popup__products-img"><a href="card.html"><img src="./img/product-2.jpg" alt="Масло оливковое"/></a></div>
+                          <div class="cart-popup__products-title">Масло оливковое c ароматом черного трюфеля RANIERI 1 кг.</div>
+                          <div class="cart-popup__products-price">148 450 руб.</div>
+                          <button class="cart-popup__products-remove" type="button"></button>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="cart-popup__footer">
+                      <div class="cart-popup__total">Итого:<span class="cart-popup__total-price">625 800 руб.</span></div>
+                      <button class="cart-popup__checkout button-form" type="submit">Оформить заказ</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="site-header__cart-price">990 500 &#8381;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <div class="container">
+          <div class="main-nav__inner">
+            <div class="main-nav__mobile-head"><span>Меню</span>
+              <button class="js-top-nav-close" type="button"></button>
+            </div>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a href="catalog-part.html">Мясо</a></li>
+              <li class="main-nav__item main-nav__item--has-subnav"><a href="catalog-part.html">Рыба и морепродукты</a>
+                <div class="main-nav__submenu">
+                  <ul class="main-nav__submenu-list">
+                    <li class="main-nav__submenu-item"><a href="catalog-part.html">Рыба свежемороженная</a></li>
+                    <li class="main-nav__submenu-item"><a href="catalog-part.html">Креветки</a></li>
+                    <li class="main-nav__submenu-item"><a href="catalog-part.html">Морские деликатесы</a></li>
+                    <li class="main-nav__submenu-item"><a href="catalog-part.html">Пресевы</a></li>
+                    <li class="main-nav__submenu-item"><a href="catalog-part.html">Рыбная продукция NOTOS</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-nav__item main-nav__item--has-subnav"><a href="catalog-part.html">Бакалея</a>
+                <div class="main-nav__submenu main-nav__submenu--grocery">
+                  <div class="main-nav__submenu-col">
+                    <div class="main-nav__submenu-group"><a href="catalog-part.html">Масло</a></div>
+                    <ul class="main-nav__submenu-list">
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Масло растительное</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Масло оливковое</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Масло фритюрное</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Масло сливочное</a></li>
+                    </ul>
+                  </div>
+                  <div class="main-nav__submenu-col">
+                    <div class="main-nav__submenu-group"><a href="catalog-part.html">Консервация</a></div>
+                    <ul class="main-nav__submenu-list">
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Консервация</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Джем, варенье, повидло</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Консервы мясные</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Консервы рыбные</a></li>
+                    </ul>
+                  </div>
+                  <div class="main-nav__submenu-col">
+                    <div class="main-nav__submenu-group"><a href="catalog-part.html">Крупы</a></div>
+                    <ul class="main-nav__submenu-list">
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Крупы импорт</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Крупы фасовка</a></li>
+                      <li class="main-nav__submenu-item delimer"></li>
+                    </ul>
+                    <div class="main-nav__submenu-group"><a href="catalog-part.html">Макаронные изделия</a></div>
+                  </div>
+                  <div class="main-nav__submenu-col main-nav__submenu-col--narrow">
+                    <div class="main-nav__submenu-group"><a href="catalog-part.html">Мука</a></div>
+                    <div class="main-nav__submenu-group"><a href="catalog-part.html">Сахар</a></div>
+                    <div class="main-nav__submenu-group"><a href="catalog-part.html">Чай, кофе</a></div>
+                  </div>
+                </div>
+              </li>
+              <li class="main-nav__item main-nav__item--has-subnav"><a href="catalog-part.html">Молочная продукция</a>
+                <div class="main-nav__submenu">
+                  <ul class="main-nav__submenu-list">
+                    <li class="main-nav__submenu-item"><a href="catalog-part.html">Сыр</a></li>
+                    <li class="main-nav__submenu-item"><a href="catalog-part.html">Молоко</a></li>
+                    <li class="main-nav__submenu-item"><a href="catalog-part.html">Сливки</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-nav__item main-nav__item--has-subnav"><a href="catalog-part.html">Напитки</a>
+                <div class="main-nav__submenu">
+                  <ul class="main-nav__submenu-list">
+                    <li class="main-nav__submenu-item"><a href="catalog-part.html">Минеральная вода</a></li>
+                    <li class="main-nav__submenu-item"><a href="catalog-part.html">Соки</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-nav__item main-nav__item--has-subnav"><a href="catalog-part.html">Замороженые овощи и фрукты</a>
+                <div class="main-nav__submenu">
+                  <ul class="main-nav__submenu-list">
+                    <li class="main-nav__submenu-item"><a href="catalog-part.html">Овощи замороженые</a></li>
+                    <li class="main-nav__submenu-item"><a href="catalog-part.html">Ягоды замороженые</a></li>
+                    <li class="main-nav__submenu-item"><a href="catalog-part.html">Грибы замороженые</a></li>
+                    <li class="main-nav__submenu-item"><a href="catalog-part.html">Овощи смеси замороженые</a></li>
+                    <li class="main-nav__submenu-item"><a href="catalog-part.html">Картофель Фри</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="main-nav__item"><a href="catalog-part.html">Хлеб, печенье</a></li>
+              <li class="main-nav__item main-nav__item--has-subnav"><a href="catalog-part.html">Прочее</a>
+                <div class="main-nav__submenu main-nav__submenu--other">
+                  <div class="main-nav__submenu-col">
+                    <ul class="main-nav__submenu-list">
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Сиропы</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Соусы</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Торты, десерты</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Орехи, чипсы, снеки</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Колбасные изделия</a></li>
+                    </ul>
+                  </div>
+                  <div class="main-nav__submenu-col">
+                    <ul class="main-nav__submenu-list">
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Биопродукты</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Продукция ТМ Сэн Сой (Японская кухня)</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="main-nav__menu-services">
+              <ul class="menu-services">
+                <li class="menu-services__item"><a href="recipes.html">Рецепты</a></li>
+                <li class="menu-services__item"><a href="404.html">Доставка</a></li>
+                <li class="menu-services__item"><a href="404.html">Оплата</a></li>
+                <li class="menu-services__item"><a href="store-contact.html">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="main-nav__order-status"><a class="order-status" href="buyers-status.html">Статус заказа</a></div>
+            <div class="main-nav__login"><a class="login" href="entrance.html">Личный кабинет</a></div>
+          </div>
+        </div>
+      </nav>
+      <div class="nav-overlay"></div>
+    </header>
+    <section class="entrance">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li class="breadcrumb__back"><a href="javascript:void(0);">Назад</a></li>
+          <li><a href="index.html">Главная</a></li>
+          <li>Вход</li>
+        </ul>
+        <div class="entrance__tab-wrapper">
+          <div class="entrance__tab-controls">
+            <div class="entrance__tab"><span class="entrance__tab-login">Войти</span></div>
+            <div class="entrance__tab"><span class="entrance__tab-registration">Регистрация</span></div>
+          </div>
+          <div class="entrance__tab-content">
+            <div class="entrance__tab-item">
+              <form class="login-site" action="" id="login-site">
+                <h3>с помощью социальной сети в 1 клик</h3>
+                <div class="social"><a class="social__item vkontakte" href="javascript:void(0);"></a><a class="social__item facebook" href="javascript:void(0);"></a><a class="social__item odnoklasniki" href="javascript:void(0);"></a></div>
+                <div class="delimer">или</div>
+                <input class="form-control" type="email" name="email" placeholder="E-mail" required="required"/>
+                <input class="form-control" type="password" name="password" placeholder="Пароль" required="required"/><a class="login-site__forgot-password to-modal-password-recovery" href="#password-recovery">Забыли пароль?</a>
+                <button class="button" type="submit">Войти</button>
+              </form>
+            </div>
+            <div class="entrance__tab-item">
+              <form class="registration-site" action="" id="registration-site">
+                <h3>с помощью социальной сети в 1 клик</h3>
+                <div class="social"><a class="social__item vkontakte" href="javascript:void(0);"></a><a class="social__item facebook" href="javascript:void(0);"></a><a class="social__item odnoklasniki" href="javascript:void(0);"></a></div>
+                <div class="delimer">или</div>
+                <input class="form-control" type="text" name="username" placeholder="Имя" required="required"/>
+                <input class="form-control" type="email" name="email" placeholder="E-mail" required="required"/>
+                <input class="form-control" type="tel" name="phone" placeholder="Телефон" required="required"/>
+                <input class="form-control" type="password" name="password" placeholder="Пароль" required="required"/>
+                <div class="registration-site__privacy">
+                  <input class="registration-site__checkbox" type="checkbox" name="conditions_privacy" id="registration-site-privacy" checked="checked"/>
+                  <label for="registration-site-privacy">Я принимаю условия <span> политики конфиденциальности</span></label>
+                </div>
+                <div class="registration-site__subscribe">
+                  <input class="registration-site__checkbox" type="checkbox" name="subscribe" id="registration-site-subscribe" checked="checked"/>
+                  <label for="registration-site-subscribe">Я согласен получать рассылки о вкусных предложениях</label>
+                </div>
+                <button class="button" type="submit">Зарегистрироваться</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__top">
+          <div class="site-footer__col site-footer__col--about-store">
+            <h4 class="site-footer__according-heading">О магазине</h4>
+            <ul class="site-footer__menu">
+              <li class="site-footer__item"><a href="404.html">Компания</a></li>
+              <li class="site-footer__item"><a href="store-contact.html">Контакты</a></li>
+              <li class="site-footer__item"><a href="news.html">Новости</a></li>
+              <li class="site-footer__item"><a href="cabinet-feedback.html">Обратная связь</a></li>
+              <li class="site-footer__item"><a href="404.html">Реквизиты</a></li>
+              <li class="site-footer__item"><a href="vacancy.html">Вакансии</a></li>
+            </ul>
+          </div>
+          <div class="site-footer__col site-footer__col--shoppers">
+            <h4 class="site-footer__according-heading">Покупателям</h4>
+            <ul class="site-footer__menu">
+              <li class="site-footer__item"><a href="404.html">Оплата</a></li>
+              <li class="site-footer__item"><a href="404.html">Доставка</a></li>
+              <li class="site-footer__item"><a href="404.html">Обмен и возврат</a></li>
+              <li class="site-footer__item"><a href="buyers-status.html">Статус заказа</a></li>
+            </ul>
+          </div><a class="site-footer__delivery-conditions site-footer__according-heading" href="javascript:void(0);">Условия доставки</a>
+          <div class="site-footer__col site-footer__col--payment">
+            <h4 class="site-footer__according-heading">Принимаем к оплате</h4>
+            <div class="site-footer__payment-option">
+              <div class="site-footer__payment-cards">
+                <div class="site-footer__payment-visa"></div>
+                <div class="site-footer__payment-master"></div>
+              </div>
+              <p>Вы также можете оплатить покупки наличными при получении или выбрать другой <a href="javascript:void(0);">способ оплаты</a>.</p>
+            </div>
+          </div>
+          <div class="site-footer__col site-footer__col--contact">
+            <h4 class="site-footer__according-heading">Адреса магазинов в Сочи</h4>
+            <div class="site-footer__contacts">
+              <p>Оптово-розничный комплекс, ул. Фабрициуса, д. 58 Рынок “Вертодром”, ул. Пластунская, д. 153/2</p>
+              <p>ТЦ “Апельсин. Базар”, Адлерский р-н, ул. Ленина, д. 156</p>
+              <p>ТЦ “Парус”, ул. Воровского, д. 41</p><a class="site-footer__stores-all" href="store-contact.html">Другие магазины</a>
+              <div class="site-footer__phones"><a class="site-footer__phones-link" href="tel:+89184000739">8 (918) 400-07-39</a><a class="site-footer__phones-link" href="tel:+89884000739">8 (988) 400-07-39</a></div><a class="site-footer__mailing" href="mailto:info@gastro-man.ru">info@gastro-man.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scrollup__container">
+        <div class="scrollup"></div>
+      </div>
+      <div class="container">
+        <div class="site-footer__bottom">
+          <ul class="site-footer__social">
+            <li class="site-footer__social-link"><a class="vkontakte" href="javascript:void(0);"></a></li>
+            <li class="site-footer__social-link"><a class="facebook" href="javascript:void(0);"></a></li>
+            <li class="site-footer__social-link"><a class="youtube" href="javascript:void(0);"></a></li>
+            <li class="site-footer__social-link"><a class="instagram" href="javascript:void(0);"></a></li>
+            <li class="site-footer__social-link"><a class="odnoklasniki" href="javascript:void(0);"></a></li>
+          </ul>
+          <div class="copyright"><span class="copyright__site-rights">© Гастроман, 2017. Все права защищены.</span><a class="copyright__privacy" href="javascript:void(0);">Политика конфиденциальности</a><span class="copyright__site-designed">Разработка сайта - PLM Agency</span></div>
+        </div>
+      </div>
+    </footer>
+    <div class="hidden">
+      <div class="modal-box callback" id="callback">
+        <form action="" id="form-callback">
+          <div class="modal-box__head">Перезвоните мне</div>
+          <h3>Оставьте свои контакты, мы перезвоним Вам в ближайшее время</h3>
+          <div class="callback__form-controls">
+            <input class="form-control" type="text" name="callback_username" placeholder="Ваше имя" required="required"/>
+            <input class="form-control" type="tel" name="callback_tel" placeholder="Ваш телефон" required="required"/>
+            <button class="callback__form-submit button" type="submit">Ок</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-box city-location" id="city-location">
+        <form action="" id="form-city-location">
+          <div class="modal-box__head">Выбрать город</div>
+          <h3>Ваш текущий город: Сочи</h3>
+          <input class="form-control" type="text" name="city_location" placeholder="Сочи" required="required"/>
+        </form>
+      </div>
+      <div class="modal-box main-subscribe" id="main-subscribe">
+        <div class="modal-box__head">Спасибо. Проверьте, пожалуйста, свой e-mail</div>
+      </div>
+      <div class="modal-box buy-click" id="buy-click">
+        <form action="" id="form-buy-click">
+          <div class="modal-box__head">Быстрый заказ</div>
+          <div class="buy-click__product-box">
+            <div class="buy-click__product-img"><img src="./img/product-2.jpg" alt="Масло оливковое"/></div>
+            <div class="buy-click__product-title">Масло оливковое c ароматом черного трюфеля RANIERI 1 кг.</div>
+            <div class="buy-click__product-capacity">1 кг.</div>
+            <div class="buy-click__product-price-box">
+              <div class="buy-click__product-price-current">148 450 руб.</div>
+              <div class="buy-click__product-price-old">1 700 руб.</div>
+            </div>
+          </div>
+          <div class="buy-click__controls">
+            <input class="form-control" type="text" name="buy_click_username" placeholder="Ваше имя" required="required"/>
+            <label class="form-control-masked">
+              <input class="form-control phone-mask" type="tel" name="buy_click_tel" placeholder="Ваш телефон" required="required"/><span>+7 (___) ___-__-__</span>
+            </label>
+            <button class="buy-click__form-submit button-form" type="submit">Оформить заказ</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-box password-recovery" id="password-recovery">
+        <form action="" id="form-password-recovery">
+          <div class="modal-box__head">Восстановление пароля</div>
+          <h3>Введите адрес электронной почты, которую указывали при регистрации</h3>
+          <input class="form-control" type="email" name="email" placeholder="E-mail" required="required"/>
+          <button class="button" type="submit">Ок</button>
+        </form>
+      </div>
+      <div class="modal-box vacancy-resume" id="vacancy-resume">
+        <form action="" id="form-vacancy-resume">
+          <div class="modal-box__head">Прикрепить резюме</div>
+          <div class="vacancy-resume__content">
+            <input class="form-control" type="text" name="name" placeholder="Ваше имя" required="required"/>
+            <input class="form-control" type="tel" name="phone" placeholder="Ваш телефон" required="required"/>
+            <input class="form-control" type="email" name="email" placeholder="Ваш e-mail" required="required"/>
+            <div class="vacancy-resume__add-file">
+              <label class="vacancy-resume__add-file-control">Прикрепить файл
+                <input type="file" name="add_file" required="required"/>
+              </label><span>docs, pdf или jpeg, но не более 10 мб.</span>
+            </div>
+            <button class="button" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-box stores-map" id="stores-map">
+        <div id="stores-address-map"></div>
+      </div>
+      <div class="modal-box store-map-single" id="store-map-first">
+        <div id="store-address-map-first"></div>
+      </div>
+      <div class="modal-box store-map-single" id="store-map-second">
+        <div id="store-address-map-second"></div>
+      </div>
+      <div class="modal-box store-map-single" id="store-map-third">
+        <div id="store-address-map-third"></div>
+      </div>
+      <div class="modal-box store-map-single" id="store-map-fourth">
+        <div id="store-address-map-fourth"></div>
+      </div>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

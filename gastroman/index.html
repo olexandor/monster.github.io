@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Home page</title>
+    <meta name="description" content="Home page"/><meta property="og:image" content="path/to/image.jpg">
+<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="stylesheet" href="css/main.css"/><meta name="theme-color" content="#ccc">
+<meta name="msapplication-navbutton-color" content="#ccc">
+<meta name="apple-mobile-web-app-status-bar-style" content="#ccc">
+  </head>
+  <body>
+    <div class="main-page">
+      <header class="site-header">
+        <div class="site-header__top">
+          <div class="container">
+            <div class="site-header__logo logo">
+              <div class="logo__img"><a href="index.html"><img src="./img/logo.png" alt="гастроман-логотип"/></a></div>
+              <div class="logo__content">
+                <div class="logo__title">Гастрономический <span>интернет-магазин</span></div>
+                <div class="logo__caption">Мы уникальны <br> в своём разнообразии!</div><a class="logo__location to-modal-city-location" href="#city-location">г. Сочи</a>
+              </div>
+            </div>
+            <div class="site-header__bottom-mobile">
+              <div class="site-header__menu-services">
+                <ul class="menu-services">
+                  <li class="menu-services__item"><a href="recipes.html">Рецепты</a></li>
+                  <li class="menu-services__item"><a href="404.html">Доставка</a></li>
+                  <li class="menu-services__item"><a href="404.html">Оплата</a></li>
+                  <li class="menu-services__item"><a href="store-contact.html">Контакты</a></li>
+                </ul>
+              </div>
+              <button class="mobile-nav-btn js-top-nav-open" type="button"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+              <div class="site-header__order-status"><a class="order-status" href="buyers-status.html">Статус заказа</a></div>
+              <div class="site-header__login"><a class="login" href="cabinet-profile.html">Личный кабинет</a></div>
+              <div class="site-header__search">
+                <form class="site-search" action="" id="site-search">
+                  <input class="site-search__control" id="main-site-search" type="text" name="site_search" placeholder="Поиск среди 1 300 товаров"/>
+                  <button class="site-search__close" type="button"></button>
+                </form>
+              </div>
+              <div class="site-header__contact"><a class="site-header__contact-phone" href="tel:+89184000739">8 (918) 400-07-39</a><a class="site-header__contact-callback to-modal-callback" href="#callback">перезвоните мне</a></div>
+              <button class="js-trigger-site-search-open" type="button"></button>
+              <div class="site-header__cart">
+                <div class="site-header__cart-action" id="header-cart-popup-trigger"><a class="site-header__cart-link" href="cart.html"></a><span class="site-header__cart-badge">100</span>
+                  <div class="cart-popup" id="header-cart-popup-products">
+                    <form class="cart-popup__inner" action="">
+                      <div class="cart-popup__head">Корзина
+                        <button class="cart-popup__remove-all" type="button">Удалить все</button>
+                      </div>
+                      <div class="cart-popup__products">
+                        <ul class="cart-popup__products-list">
+                          <li class="cart-popup__products-item">
+                            <div class="cart-popup__products-img"><a href="card.html"><img src="./img/product-2.jpg" alt="Масло оливковое"/></a></div>
+                            <div class="cart-popup__products-title">Масло оливковое c ароматом черного трюфеля RANIERI 1 кг.</div>
+                            <div class="cart-popup__products-price">148 450 руб.</div>
+                            <button class="cart-popup__products-remove" type="button"></button>
+                          </li>
+                          <li class="cart-popup__products-item">
+                            <div class="cart-popup__products-img"><a href="card.html"><img src="./img/product-3.jpg" alt="Масло оливковое"/></a></div>
+                            <div class="cart-popup__products-title">Масло оливковое c ароматом черного трюфеля RANIERI 1 кг.</div>
+                            <div class="cart-popup__products-price">148 450 руб.</div>
+                            <button class="cart-popup__products-remove" type="button"></button>
+                          </li>
+                          <li class="cart-popup__products-item">
+                            <div class="cart-popup__products-img"><a href="card.html"><img src="./img/product-2.jpg" alt="Масло оливковое"/></a></div>
+                            <div class="cart-popup__products-title">Масло оливковое c ароматом черного трюфеля RANIERI 1 кг.</div>
+                            <div class="cart-popup__products-price">148 450 руб.</div>
+                            <button class="cart-popup__products-remove" type="button"></button>
+                          </li>
+                          <li class="cart-popup__products-item">
+                            <div class="cart-popup__products-img"><a href="card.html"><img src="./img/product-3.jpg" alt="Масло оливковое"/></a></div>
+                            <div class="cart-popup__products-title">Масло оливковое c ароматом черного трюфеля RANIERI 1 кг.</div>
+                            <div class="cart-popup__products-price">148 450 руб.</div>
+                            <button class="cart-popup__products-remove" type="button"></button>
+                          </li>
+                          <li class="cart-popup__products-item">
+                            <div class="cart-popup__products-img"><a href="card.html"><img src="./img/product-2.jpg" alt="Масло оливковое"/></a></div>
+                            <div class="cart-popup__products-title">Масло оливковое c ароматом черного трюфеля RANIERI 1 кг.</div>
+                            <div class="cart-popup__products-price">148 450 руб.</div>
+                            <button class="cart-popup__products-remove" type="button"></button>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="cart-popup__footer">
+                        <div class="cart-popup__total">Итого:<span class="cart-popup__total-price">625 800 руб.</span></div>
+                        <button class="cart-popup__checkout button-form" type="submit">Оформить заказ</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="site-header__cart-price">990 500 &#8381;</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <div class="container">
+            <div class="main-nav__inner">
+              <div class="main-nav__mobile-head"><span>Меню</span>
+                <button class="js-top-nav-close" type="button"></button>
+              </div>
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="catalog-part.html">Мясо</a></li>
+                <li class="main-nav__item main-nav__item--has-subnav"><a href="catalog-part.html">Рыба и морепродукты</a>
+                  <div class="main-nav__submenu">
+                    <ul class="main-nav__submenu-list">
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Рыба свежемороженная</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Креветки</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Морские деликатесы</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Пресевы</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Рыбная продукция NOTOS</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item main-nav__item--has-subnav"><a href="catalog-part.html">Бакалея</a>
+                  <div class="main-nav__submenu main-nav__submenu--grocery">
+                    <div class="main-nav__submenu-col">
+                      <div class="main-nav__submenu-group"><a href="catalog-part.html">Масло</a></div>
+                      <ul class="main-nav__submenu-list">
+                        <li class="main-nav__submenu-item"><a href="catalog-part.html">Масло растительное</a></li>
+                        <li class="main-nav__submenu-item"><a href="catalog-part.html">Масло оливковое</a></li>
+                        <li class="main-nav__submenu-item"><a href="catalog-part.html">Масло фритюрное</a></li>
+                        <li class="main-nav__submenu-item"><a href="catalog-part.html">Масло сливочное</a></li>
+                      </ul>
+                    </div>
+                    <div class="main-nav__submenu-col">
+                      <div class="main-nav__submenu-group"><a href="catalog-part.html">Консервация</a></div>
+                      <ul class="main-nav__submenu-list">
+                        <li class="main-nav__submenu-item"><a href="catalog-part.html">Консервация</a></li>
+                        <li class="main-nav__submenu-item"><a href="catalog-part.html">Джем, варенье, повидло</a></li>
+                        <li class="main-nav__submenu-item"><a href="catalog-part.html">Консервы мясные</a></li>
+                        <li class="main-nav__submenu-item"><a href="catalog-part.html">Консервы рыбные</a></li>
+                      </ul>
+                    </div>
+                    <div class="main-nav__submenu-col">
+                      <div class="main-nav__submenu-group"><a href="catalog-part.html">Крупы</a></div>
+                      <ul class="main-nav__submenu-list">
+                        <li class="main-nav__submenu-item"><a href="catalog-part.html">Крупы импорт</a></li>
+                        <li class="main-nav__submenu-item"><a href="catalog-part.html">Крупы фасовка</a></li>
+                        <li class="main-nav__submenu-item delimer"></li>
+                      </ul>
+                      <div class="main-nav__submenu-group"><a href="catalog-part.html">Макаронные изделия</a></div>
+                    </div>
+                    <div class="main-nav__submenu-col main-nav__submenu-col--narrow">
+                      <div class="main-nav__submenu-group"><a href="catalog-part.html">Мука</a></div>
+                      <div class="main-nav__submenu-group"><a href="catalog-part.html">Сахар</a></div>
+                      <div class="main-nav__submenu-group"><a href="catalog-part.html">Чай, кофе</a></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="main-nav__item main-nav__item--has-subnav"><a href="catalog-part.html">Молочная продукция</a>
+                  <div class="main-nav__submenu">
+                    <ul class="main-nav__submenu-list">
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Сыр</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Молоко</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Сливки</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item main-nav__item--has-subnav"><a href="catalog-part.html">Напитки</a>
+                  <div class="main-nav__submenu">
+                    <ul class="main-nav__submenu-list">
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Минеральная вода</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Соки</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item main-nav__item--has-subnav"><a href="catalog-part.html">Замороженые овощи и фрукты</a>
+                  <div class="main-nav__submenu">
+                    <ul class="main-nav__submenu-list">
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Овощи замороженые</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Ягоды замороженые</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Грибы замороженые</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Овощи смеси замороженые</a></li>
+                      <li class="main-nav__submenu-item"><a href="catalog-part.html">Картофель Фри</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item"><a href="catalog-part.html">Хлеб, печенье</a></li>
+                <li class="main-nav__item main-nav__item--has-subnav"><a href="catalog-part.html">Прочее</a>
+                  <div class="main-nav__submenu main-nav__submenu--other">
+                    <div class="main-nav__submenu-col">
+                      <ul class="main-nav__submenu-list">
+                        <li class="main-nav__submenu-item"><a href="catalog-part.html">Сиропы</a></li>
+                        <li class="main-nav__submenu-item"><a href="catalog-part.html">Соусы</a></li>
+                        <li class="main-nav__submenu-item"><a href="catalog-part.html">Торты, десерты</a></li>
+                        <li class="main-nav__submenu-item"><a href="catalog-part.html">Орехи, чипсы, снеки</a></li>
+                        <li class="main-nav__submenu-item"><a href="catalog-part.html">Колбасные изделия</a></li>
+                      </ul>
+                    </div>
+                    <div class="main-nav__submenu-col">
+                      <ul class="main-nav__submenu-list">
+                        <li class="main-nav__submenu-item"><a href="catalog-part.html">Биопродукты</a></li>
+                        <li class="main-nav__submenu-item"><a href="catalog-part.html">Продукция ТМ Сэн Сой (Японская кухня)</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="main-nav__menu-services">
+                <ul class="menu-services">
+                  <li class="menu-services__item"><a href="recipes.html">Рецепты</a></li>
+                  <li class="menu-services__item"><a href="404.html">Доставка</a></li>
+                  <li class="menu-services__item"><a href="404.html">Оплата</a></li>
+                  <li class="menu-services__item"><a href="store-contact.html">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="main-nav__order-status"><a class="order-status" href="buyers-status.html">Статус заказа</a></div>
+              <div class="main-nav__login"><a class="login" href="entrance.html">Личный кабинет</a></div>
+            </div>
+          </div>
+        </nav>
+        <div class="nav-overlay"></div>
+      </header>
+      <section class="product-group">
+        <div class="container">
+          <div class="product-group__inner">
+            <div class="row">
+              <div class="col-md-9 col-sm-8">
+                <div class="main-slider__wrap">
+                  <ul class="main-slider">
+                    <li class="main-slider__item"><a class="main-slider__link" href="javascript:void(0);"><img src="./img/hero-banner-1.jpg" alt="Клубника"/></a></li>
+                    <li class="main-slider__item"><a class="main-slider__link" href="javascript:void(0);"><img src="./img/hero-banner-2.jpg" alt="Клубника"/></a></li>
+                    <li class="main-slider__item"><a class="main-slider__link" href="javascript:void(0);"><img src="./img/hero-banner-1.jpg" alt="Клубника"/></a></li>
+                    <li class="main-slider__item"><a class="main-slider__link" href="javascript:void(0);"><img src="./img/hero-banner-2.jpg" alt="Клубника"/></a></li>
+                    <li class="main-slider__item"><a class="main-slider__link" href="javascript:void(0);"><img src="./img/hero-banner-3.jpg" alt="Клубника"/></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4">
+                <div class="product-day">
+                  <h1><span>товар дня</span></h1>
+                  <div class="product-day__img"><a href="card.html"><img src="./img/product-1.jpg" alt="Вермишель Фунчоза премиум"/></a></div>
+                  <div class="product-day__title">Вермишель Фунчоза премиум <br> под Китайским устричным соусом, 125 г.</div>
+                  <div class="product-day__price">
+                    <div class="product-day__price-current">1 500 руб.</div>
+                    <div class="product-day__price-old">1 700 руб.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-products" id="home-products">
+              <ul class="home-products__tabs">
+                <li class="home-products__tabs-control r-tabs-state-active"><a href="#recommended">рекомендуемое</a></li>
+                <li class="home-products__tabs-control"><a href="#new-arrivals">новинки</a></li>
+                <li class="home-products__tabs-control"><a href="#sales">скидки</a></li>
+                <li class="home-products__tabs-control"><a href="#hits">товары недели</a></li>
+              </ul>
+              <div class="home-products__tabs-content r-tabs-state-active" id="recommended"><a class="home-products__view-all" href="catalog-part.html">cмотреть все</a>
+                <div class="slider-products">
+                  <div class="product-preview product--recommended">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-5.jpg" alt="Вермишель Фунчоза премиум"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--sale"><span>-15%</span></li>
+                        <li class="product-preview__badge product-preview__badge--new"><span>new</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/japan-flag.jpg" alt="Япония"/><span>Японская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html">Вермишель Фунчоза премиум под Китайским устричным соусом, 125 г.</a></div>
+                      <div class="product-preview__country">Алтайский край</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-old">1 700 руб.</div>
+                        <div class="product-preview__price-current">1 500 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--recommended">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-2.jpg" alt="Barilla collezione"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--new"><span>new</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/maxican-flag.jpg" alt="Япония"/><span>Мексиканская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html">Макароны Barilla collezione Двухцветные шпинат огурец из твердых сортов пшеницы</a></div>
+                      <div class="product-preview__country">Италия</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-current">11 450 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--recommended">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-3.jpg" alt="Кетчуп Heinz"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--hits"><span>hit</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/italy-flag.jpg" alt="Япония"/><span>Итальянская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html">Кетчуп Heinz премиум томатный острый Без консерванотов, 500 г.</a></div>
+                      <div class="product-preview__country">Росиия</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-current">9 000 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--recommended">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="jcard.html"><img src="./img/product-4.jpg" alt="Вермишель Фунчоза"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--sale"><span>-15%</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/french-flag.jpg" alt="Япония"/><span>Французская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html"> Вермишель Фунчоза премиум под Китайским устричным соусом, 125 г.</a></div>
+                      <div class="product-preview__country">Росиия</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-old">1 700 руб.</div>
+                        <div class="product-preview__price-current">12 580 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--recommended">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-5.jpg" alt="Вермишель Фунчоза премиум"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--new"><span>new</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/russian-flag.jpg" alt="Япония"/><span>Русская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html">Вермишель Фунчоза премиум под Китайским устричным соусом, 125 г.</a></div>
+                      <div class="product-preview__country">Алтайский край</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-current">12 300 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--recommended">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-5.jpg" alt="Вермишель Фунчоза премиум"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--new"><span>new</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/russian-flag.jpg" alt="Япония"/><span>Русская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html">Вермишель Фунчоза премиум под Китайским устричным соусом, 125 г.</a></div>
+                      <div class="product-preview__country">Алтайский край</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-current">12 300 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-products__tabs-content" id="new-arrivals"><a class="home-products__view-all" href="catalog-part.html">cмотреть все</a>
+                <div class="slider-products">
+                  <div class="product-preview product--new">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-1.jpg" alt="Вермишель Фунчоза премиум"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--new"><span>new</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/russian-flag.jpg" alt="Япония"/><span>Русская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html">Вермишель Фунчоза премиум под Китайским устричным соусом, 125 г.</a></div>
+                      <div class="product-preview__country">Алтайский край</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-current">12 300 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--new">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-2.jpg" alt="Вермишель Фунчоза премиум"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--new"><span>new</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/russian-flag.jpg" alt="Япония"/><span>Русская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html">Вермишель Фунчоза премиум под Китайским устричным соусом, 125 г.</a></div>
+                      <div class="product-preview__country">Алтайский край</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-current">12 300 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--new">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-3.jpg" alt="Вермишель Фунчоза премиум"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--new"><span>new</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/russian-flag.jpg" alt="Япония"/><span>Русская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html">Вермишель Фунчоза премиум под Китайским устричным соусом, 125 г.</a></div>
+                      <div class="product-preview__country">Алтайский край</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-current">12 300 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--new">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-4.jpg" alt="Вермишель Фунчоза премиум"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--new"><span>new</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/russian-flag.jpg" alt="Япония"/><span>Русская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html">Вермишель Фунчоза премиум под Китайским устричным соусом, 125 г.</a></div>
+                      <div class="product-preview__country">Алтайский край</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-current">12 300 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--new">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-5.jpg" alt="Вермишель Фунчоза премиум"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--new"><span>new</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/russian-flag.jpg" alt="Япония"/><span>Русская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html">Вермишель Фунчоза премиум под Китайским устричным соусом, 125 г.</a></div>
+                      <div class="product-preview__country">Алтайский край</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-current">12 300 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--new">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-4.jpg" alt="Вермишель Фунчоза премиум"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--new"><span>new</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/russian-flag.jpg" alt="Япония"/><span>Русская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html">Вермишель Фунчоза премиум под Китайским устричным соусом, 125 г.</a></div>
+                      <div class="product-preview__country">Алтайский край</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-current">12 300 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-products__tabs-content" id="sales"><a class="home-products__view-all" href="catalog-part.html">cмотреть все</a>
+                <div class="slider-products">
+                  <div class="product-preview product--sale">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-4.jpg" alt="Вермишель Фунчоза"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--sale"><span>-15%</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/french-flag.jpg" alt="Япония"/><span>Французская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html"> Вермишель Фунчоза премиум под Китайским устричным соусом, 125 г.</a></div>
+                      <div class="product-preview__country">Росиия</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-old">1 700 руб.</div>
+                        <div class="product-preview__price-current">12 580 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--sale">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-5.jpg" alt="Вермишель Фунчоза"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--sale"><span>-15%</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/french-flag.jpg" alt="Япония"/><span>Французская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html"> Вермишель Фунчоза премиум под Китайским устричным соусом, 125 г.</a></div>
+                      <div class="product-preview__country">Росиия</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-old">1 700 руб.</div>
+                        <div class="product-preview__price-current">12 580 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--sale">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-1.jpg" alt="Вермишель Фунчоза"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--sale"><span>-15%</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/french-flag.jpg" alt="Япония"/><span>Французская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html"> Вермишель Фунчоза премиум под Китайским устричным соусом, 125 г.</a></div>
+                      <div class="product-preview__country">Росиия</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-old">1 700 руб.</div>
+                        <div class="product-preview__price-current">12 580 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--sale">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-2.jpg" alt="Вермишель Фунчоза"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--sale"><span>-15%</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/french-flag.jpg" alt="Япония"/><span>Французская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html"> Вермишель Фунчоза премиум под Китайским устричным соусом, 125 г.</a></div>
+                      <div class="product-preview__country">Росиия</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-old">1 700 руб.</div>
+                        <div class="product-preview__price-current">12 580 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--sale">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-3.jpg" alt="Вермишель Фунчоза"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--sale"><span>-15%</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/french-flag.jpg" alt="Япония"/><span>Французская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html"> Вермишель Фунчоза премиум под Китайским устричным соусом, 125 г.</a></div>
+                      <div class="product-preview__country">Росиия</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-old">1 700 руб.</div>
+                        <div class="product-preview__price-current">12 580 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--sale">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-5.jpg" alt="Вермишель Фунчоза"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--sale"><span>-15%</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/french-flag.jpg" alt="Япония"/><span>Французская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html"> Вермишель Фунчоза премиум под Китайским устричным соусом, 125 г.</a></div>
+                      <div class="product-preview__country">Росиия</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-old">1 700 руб.</div>
+                        <div class="product-preview__price-current">12 580 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-products__tabs-content" id="hits"><a class="home-products__view-all" href="catalog-part.html">cмотреть все</a>
+                <div class="slider-products">
+                  <div class="product-preview product--hits">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-2.jpg" alt="Кетчуп Heinz"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--hits"><span>hit</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/italy-flag.jpg" alt="Япония"/><span>Итальянская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html">Кетчуп Heinz премиум томатный острый Без консерванотов, 500 г.</a></div>
+                      <div class="product-preview__country">Росиия</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-current">9 000 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--hits">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-1.jpg" alt="Кетчуп Heinz"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--hits"><span>hit</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/italy-flag.jpg" alt="Япония"/><span>Итальянская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html">Кетчуп Heinz премиум томатный острый Без консерванотов, 500 г.</a></div>
+                      <div class="product-preview__country">Росиия</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-current">9 000 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--hits">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-5.jpg" alt="Кетчуп Heinz"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--hits"><span>hit</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/italy-flag.jpg" alt="Япония"/><span>Итальянская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html">Кетчуп Heinz премиум томатный острый Без консерванотов, 500 г.</a></div>
+                      <div class="product-preview__country">Росиия</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-current">9 000 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--hits">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-3.jpg" alt="Кетчуп Heinz"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--hits"><span>hit</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/italy-flag.jpg" alt="Япония"/><span>Итальянская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html">Кетчуп Heinz премиум томатный острый Без консерванотов, 500 г.</a></div>
+                      <div class="product-preview__country">Росиия</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-current">9 000 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--hits">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-4.jpg" alt="Кетчуп Heinz"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--hits"><span>hit</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/italy-flag.jpg" alt="Япония"/><span>Итальянская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html">Кетчуп Heinz премиум томатный острый Без консерванотов, 500 г.</a></div>
+                      <div class="product-preview__country">Росиия</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-current">9 000 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                  <div class="product-preview product--hits">
+                    <div class="product-preview__img-box"><a class="product-preview__image" href="card.html"><img src="./img/product-3.jpg" alt="Кетчуп Heinz"/></a>
+                      <ul class="product-preview__badge-set">
+                        <li class="product-preview__badge product-preview__badge--hits"><span>hit</span></li>
+                      </ul>
+                    </div>
+                    <div class="product-preview__info">
+                      <div class="product-preview__kitchen"><img src="./img/italy-flag.jpg" alt="Япония"/><span>Итальянская кухня</span></div>
+                      <div class="product-preview__title"><a href="card.html">Кетчуп Heinz премиум томатный острый Без консерванотов, 500 г.</a></div>
+                      <div class="product-preview__country">Росиия</div>
+                      <div class="product-preview__price-block">
+                        <div class="product-preview__price-current">9 000 руб.</div>
+                      </div><a class="product-preview__buy button button--light" href="javascript:void(0);">Купить</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="benefits">
+        <div class="container">
+          <ul class="benefits__list">
+            <li class="benefits__item delivery">
+              <div class="benefits__item-tumbnail"><img src="./img/benefit-free-delivery.png" alt="бесплатная доставка"/></div>
+              <p>Бесплатная доставка <br> при заказе от 2 000 руб.</p>
+            </li>
+            <li class="benefits__item best-product">
+              <div class="benefits__item-tumbnail"><img src="./img/benefit-best-product.png" alt="лучшие продукты"/></div>
+              <p>Лучшие продукты <br> со всего мира</p>
+            </li>
+            <li class="benefits__item sales">
+              <div class="benefits__item-tumbnail"><img src="./img/benefit-sales.png" alt="акции и скидки"/></div>
+              <p>Акции и скидки <br> каждый день</p>
+            </li>
+            <li class="benefits__item quality">
+              <div class="benefits__item-tumbnail"><img src="./img/benefit-quality.png" alt="провереное качество"/></div>
+              <p>Только проверенное <br> качество</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="recipes">
+        <div class="container">
+          <div class="section-title section-title--hat">
+            <h2>рецепты гастромана</h2>
+          </div>
+          <ul class="recipes__slider">
+            <li class="recipes__slider-item"><a class="recipes__item" href="dish.html"><img src="./img/recipes-1.jpg" alt="Жаренные бананы"/>
+                <div class="recipes__content">
+                  <div class="recipes__category">Рецепты / Салаты</div>
+                  <div class="recipes__title"><span>Жаренные бананы</span></div>
+                  <div class="recipes__content-bottom">
+                    <div class="recipes__time">25 минут</div>
+                    <div class="recipes__ingredients">2 ингридиента</div>
+                  </div>
+                </div></a></li>
+            <li class="recipes__slider-item"><a class="recipes__item" href="dish.html"><img src="./img/recipes-2.jpg" alt="Салат из рукколы"/>
+                <div class="recipes__content">
+                  <div class="recipes__category">Рецепты / Десерты</div>
+                  <div class="recipes__title"><span>Салат из рукколы</span></div>
+                  <div class="recipes__content-bottom">
+                    <div class="recipes__time">25 минут</div>
+                    <div class="recipes__ingredients">2 ингридиента</div>
+                  </div>
+                </div></a></li>
+            <li class="recipes__slider-item"><a class="recipes__item" href="dish.html"><img src="./img/recipes-3.jpg" alt="Запеченная свекла с тмином"/>
+                <div class="recipes__content">
+                  <div class="recipes__category">Рецепты / Основные блюда</div>
+                  <div class="recipes__title"><span>Запеченная свекла с тмином </span></div>
+                  <div class="recipes__content-bottom">
+                    <div class="recipes__time">25 минут</div>
+                    <div class="recipes__ingredients">2 ингридиента</div>
+                  </div>
+                </div></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe__inner">
+            <h4><span>Подпишитесь на нашу рассылку</span> <br> и будьте в курсе о самых вкусных предложениях!</h4>
+            <form class="subscribe__form" action="" id="home-subscribe">
+              <input class="subscribe__control" type="text" name="email" placeholder="E-mail" required="required"/>
+              <button class="subscribe__submit button" type="submit">Подписаться</button><span class="subscribe__status-login subscribe__status-login--successfully" id="home-subscribe-error"></span>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="news-preview">
+        <div class="container">
+          <div class="section-title section-title--newspaper">
+            <h2>новости</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-8">
+              <ul class="news-preview__slider">
+                <li class="news-preview__slider-item">
+                  <div class="news-preview__banner"><a href="article.html"><img src="./img/news-banner-1.jpg" alt="Скидки в день святого Валентина!"/></a></div>
+                  <div class="news-preview__item">
+                    <div class="news-preview__date">21.12.2017</div>
+                    <div class="news-preview__title"><a href="article.html">В Гастрономе скидки в день святого Валентина!</a></div>
+                  </div>
+                </li>
+                <li class="news-preview__slider-item">
+                  <div class="news-preview__banner"><a href="article.html"><img src="./img/news-banner-2.jpg" alt="Скидки в день святого Валентина!"/></a></div>
+                  <div class="news-preview__item">
+                    <div class="news-preview__date">21.12.2017</div>
+                    <div class="news-preview__title"><a href="article.html">В Гастрономе скидки в день святого Валентина!</a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div class="news-preview__list-box">
+                <h4>Другие новости</h4>
+                <ul class="news-preview__list">
+                  <li class="news-preview__list-item">
+                    <div class="news-preview__date">21.12.2017</div>
+                    <div class="news-preview__title"><a href="article.html">Администрация города Сочи произвела закупку продуктов в Гастрономе для организации встречи президентов.</a></div>
+                  </li>
+                  <li class="news-preview__list-item">
+                    <div class="news-preview__date">21.12.2017</div>
+                    <div class="news-preview__title"><a href="article.html">Администрация города Сочи произвела закупку продуктов в Гастрономе для организации встречи президентов.</a></div>
+                  </li>
+                  <li class="news-preview__list-item">
+                    <div class="news-preview__date">21.12.2017</div>
+                    <div class="news-preview__title"><a href="article.html">Администрация города Сочи произвела закупку продуктов в Гастрономе для организации встречи президентов.</a></div>
+                  </li>
+                </ul><a class="news-preview__view-all" href="news.html">Смотреть все новости</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-store">
+        <div class="container">
+          <div class="about-store__description">
+            <div class="about-store__description-content">
+              <p>Магазин продуктов питания онлайн – это идеальное решение для современного человека. Ведь при глобальной занятости москвичей и жителей Подмосковья порой просто некогда сходить в магазин, чтобы купить что-то полезное и вкусное. Конечно, настоящий гурман выделит в своем графике час-другой на поход по супермаркету, но очереди в кассы, толчея, неадекватные цены на продукты питания и спорное качество выставленных товаров зачастую способны испортить не только настроение, но и долгожданный ужин.</p>
+              <p>Магазин продуктов питания онлайн – это идеальное решение для современного человека. Ведь при глобальной занятости москвичей и жителей Подмосковья порой просто некогда сходить в магазин, чтобы купить что-то полезное и вкусное. Конечно, настоящий гурман выделит в своем графике час-другой на поход по супермаркету, но очереди в кассы, толчея, неадекватные цены на продукты питания и спорное качество выставленных товаров зачастую способны испортить не только настроение, но и долгожданный ужин.</p>
+            </div>
+            <button class="collapse-text about-store__description-collapse off">Показать полностью</button>
+          </div>
+        </div>
+      </section>
+      <footer class="site-footer">
+        <div class="container">
+          <div class="site-footer__top">
+            <div class="site-footer__col site-footer__col--about-store">
+              <h4 class="site-footer__according-heading">О магазине</h4>
+              <ul class="site-footer__menu">
+                <li class="site-footer__item"><a href="404.html">Компания</a></li>
+                <li class="site-footer__item"><a href="store-contact.html">Контакты</a></li>
+                <li class="site-footer__item"><a href="news.html">Новости</a></li>
+                <li class="site-footer__item"><a href="cabinet-feedback.html">Обратная связь</a></li>
+                <li class="site-footer__item"><a href="404.html">Реквизиты</a></li>
+                <li class="site-footer__item"><a href="vacancy.html">Вакансии</a></li>
+              </ul>
+            </div>
+            <div class="site-footer__col site-footer__col--shoppers">
+              <h4 class="site-footer__according-heading">Покупателям</h4>
+              <ul class="site-footer__menu">
+                <li class="site-footer__item"><a href="404.html">Оплата</a></li>
+                <li class="site-footer__item"><a href="404.html">Доставка</a></li>
+                <li class="site-footer__item"><a href="404.html">Обмен и возврат</a></li>
+                <li class="site-footer__item"><a href="buyers-status.html">Статус заказа</a></li>
+              </ul>
+            </div><a class="site-footer__delivery-conditions site-footer__according-heading" href="javascript:void(0);">Условия доставки</a>
+            <div class="site-footer__col site-footer__col--payment">
+              <h4 class="site-footer__according-heading">Принимаем к оплате</h4>
+              <div class="site-footer__payment-option">
+                <div class="site-footer__payment-cards">
+                  <div class="site-footer__payment-visa"></div>
+                  <div class="site-footer__payment-master"></div>
+                </div>
+                <p>Вы также можете оплатить покупки наличными при получении или выбрать другой <a href="javascript:void(0);">способ оплаты</a>.</p>
+              </div>
+            </div>
+            <div class="site-footer__col site-footer__col--contact">
+              <h4 class="site-footer__according-heading">Адреса магазинов в Сочи</h4>
+              <div class="site-footer__contacts">
+                <p>Оптово-розничный комплекс, ул. Фабрициуса, д. 58 Рынок “Вертодром”, ул. Пластунская, д. 153/2</p>
+                <p>ТЦ “Апельсин. Базар”, Адлерский р-н, ул. Ленина, д. 156</p>
+                <p>ТЦ “Парус”, ул. Воровского, д. 41</p><a class="site-footer__stores-all" href="store-contact.html">Другие магазины</a>
+                <div class="site-footer__phones"><a class="site-footer__phones-link" href="tel:+89184000739">8 (918) 400-07-39</a><a class="site-footer__phones-link" href="tel:+89884000739">8 (988) 400-07-39</a></div><a class="site-footer__mailing" href="mailto:info@gastro-man.ru">info@gastro-man.ru</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scrollup__container">
+          <div class="scrollup"></div>
+        </div>
+        <div class="container">
+          <div class="site-footer__bottom">
+            <ul class="site-footer__social">
+              <li class="site-footer__social-link"><a class="vkontakte" href="javascript:void(0);"></a></li>
+              <li class="site-footer__social-link"><a class="facebook" href="javascript:void(0);"></a></li>
+              <li class="site-footer__social-link"><a class="youtube" href="javascript:void(0);"></a></li>
+              <li class="site-footer__social-link"><a class="instagram" href="javascript:void(0);"></a></li>
+              <li class="site-footer__social-link"><a class="odnoklasniki" href="javascript:void(0);"></a></li>
+            </ul>
+            <div class="copyright"><span class="copyright__site-rights">© Гастроман, 2017. Все права защищены.</span><a class="copyright__privacy" href="javascript:void(0);">Политика конфиденциальности</a><span class="copyright__site-designed">Разработка сайта - PLM Agency</span></div>
+          </div>
+        </div>
+      </footer>
+      <div class="hidden">
+        <div class="modal-box callback" id="callback">
+          <form action="" id="form-callback">
+            <div class="modal-box__head">Перезвоните мне</div>
+            <h3>Оставьте свои контакты, мы перезвоним Вам в ближайшее время</h3>
+            <div class="callback__form-controls">
+              <input class="form-control" type="text" name="callback_username" placeholder="Ваше имя" required="required"/>
+              <input class="form-control" type="tel" name="callback_tel" placeholder="Ваш телефон" required="required"/>
+              <button class="callback__form-submit button" type="submit">Ок</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-box city-location" id="city-location">
+          <form action="" id="form-city-location">
+            <div class="modal-box__head">Выбрать город</div>
+            <h3>Ваш текущий город: Сочи</h3>
+            <input class="form-control" type="text" name="city_location" placeholder="Сочи" required="required"/>
+          </form>
+        </div>
+        <div class="modal-box main-subscribe" id="main-subscribe">
+          <div class="modal-box__head">Спасибо. Проверьте, пожалуйста, свой e-mail</div>
+        </div>
+        <div class="modal-box buy-click" id="buy-click">
+          <form action="" id="form-buy-click">
+            <div class="modal-box__head">Быстрый заказ</div>
+            <div class="buy-click__product-box">
+              <div class="buy-click__product-img"><img src="./img/product-2.jpg" alt="Масло оливковое"/></div>
+              <div class="buy-click__product-title">Масло оливковое c ароматом черного трюфеля RANIERI 1 кг.</div>
+              <div class="buy-click__product-capacity">1 кг.</div>
+              <div class="buy-click__product-price-box">
+                <div class="buy-click__product-price-current">148 450 руб.</div>
+                <div class="buy-click__product-price-old">1 700 руб.</div>
+              </div>
+            </div>
+            <div class="buy-click__controls">
+              <input class="form-control" type="text" name="buy_click_username" placeholder="Ваше имя" required="required"/>
+              <label class="form-control-masked">
+                <input class="form-control phone-mask" type="tel" name="buy_click_tel" placeholder="Ваш телефон" required="required"/><span>+7 (___) ___-__-__</span>
+              </label>
+              <button class="buy-click__form-submit button-form" type="submit">Оформить заказ</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-box password-recovery" id="password-recovery">
+          <form action="" id="form-password-recovery">
+            <div class="modal-box__head">Восстановление пароля</div>
+            <h3>Введите адрес электронной почты, которую указывали при регистрации</h3>
+            <input class="form-control" type="email" name="email" placeholder="E-mail" required="required"/>
+            <button class="button" type="submit">Ок</button>
+          </form>
+        </div>
+        <div class="modal-box vacancy-resume" id="vacancy-resume">
+          <form action="" id="form-vacancy-resume">
+            <div class="modal-box__head">Прикрепить резюме</div>
+            <div class="vacancy-resume__content">
+              <input class="form-control" type="text" name="name" placeholder="Ваше имя" required="required"/>
+              <input class="form-control" type="tel" name="phone" placeholder="Ваш телефон" required="required"/>
+              <input class="form-control" type="email" name="email" placeholder="Ваш e-mail" required="required"/>
+              <div class="vacancy-resume__add-file">
+                <label class="vacancy-resume__add-file-control">Прикрепить файл
+                  <input type="file" name="add_file" required="required"/>
+                </label><span>docs, pdf или jpeg, но не более 10 мб.</span>
+              </div>
+              <button class="button" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-box stores-map" id="stores-map">
+          <div id="stores-address-map"></div>
+        </div>
+        <div class="modal-box store-map-single" id="store-map-first">
+          <div id="store-address-map-first"></div>
+        </div>
+        <div class="modal-box store-map-single" id="store-map-second">
+          <div id="store-address-map-second"></div>
+        </div>
+        <div class="modal-box store-map-single" id="store-map-third">
+          <div id="store-address-map-third"></div>
+        </div>
+        <div class="modal-box store-map-single" id="store-map-fourth">
+          <div id="store-address-map-fourth"></div>
+        </div>
+      </div>
+      <script src="js/libs.min.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+      <script src="js/app.js"></script>
+    </div>
+  </body>
+</html>
