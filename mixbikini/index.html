@@ -1,0 +1,491 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <!-- Seo info-->
+    <title>Template</title>
+    <meta name="description" content="Developed by YoungDevelopers team"/>
+    <!-- Styles-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- Favicons-->
+    <meta property="og:image" content="path/to/image.jpg"/>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"/>
+    <!-- Browsers Colorbar-->
+    <meta name="theme-color" content="#000"/>
+    <meta name="msapplication-navbutton-color" content="#000"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000"/>
+    <!-- js-->
+    <script src="js/libs.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx6AzWFIJkW0zg4M_GBUZawf_xs4NzNpw&amp;callback=initMap" async="async"></script>
+  </head>
+  <body>
+    <div class="overlay"></div><!-- HEADER -->
+    <header class="site-header">
+      <div class="site-header__top">
+        <div class="container">
+          <button class="mobile-nav-btn js-top-nav-open"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+          <button class="js-trigger-site-search-open mobile-visible" type="button"></button>
+          <div class="header-contact">
+            <div class="header-contact__tel"><a class="contact-tel" href="tel:+84956450970">8 (495) 645-09-70</a><a class="contact-tel" href="tel:+88002505399">8-800-250-53-99</a></div>
+            <div class="header-contact__city"><span class="header-contact__town header-contact__town--underline js-trigger-town-open">г. Москва</span><span class="header-contact__street">Ветошный переулок, д. 9</span></div>
+          </div><a class="header-logo" href="index.html"><img src="./images/logo.jpg" alt="логотип"/></a>
+          <div class="header-actions">
+            <div class="header-actions__item header-login"><a class="header-login__link" href="cabinet-profile.html"><span class="header-login__username">Александра</span></a></div>
+            <div class="header-actions__item header-favorite"><a class="header-favorite__link" href="favorite.html"></a></div>
+            <div class="header-actions__item header-cart"><a class="header-cart__link" href="cart.html"></a></div>
+          </div>
+        </div>
+        <div class="live-town clearfix" style="display:none;">
+          <div class="container relative">
+            <div class="live-town__current">Ваш город: <span class="header-contact__town">Александровск-Сахалинский</span></div>
+            <form class="live-town__search" action="" id="search-town">
+              <input class="live-town__search-control" type="text" name="text" placeholder="Поиск города" id="town-search"/>
+              <button class="button-form" type="submit">ок</button>
+              <button class="live-town__close js-trigger-town-close" type="button"></button>
+            </form>
+          </div>
+        </div>
+        <div class="header__site-search">
+          <div class="container">
+            <form class="site-search" action="" id="site-search">
+              <div class="site-search__controls">
+                <input class="site-search__entry-field" type="text" name="text" placeholder="Поиск"/>
+                <button class="js-trigger-site-search-close" type="button"></button>
+              </div>
+              <div class="site-search__result"><span class="site-search__result-category">бренд</span>
+                <ul class="site-search__result-list">
+                  <li><a href="https://mixbikini.ru/">Beach Bunny</a></li>
+                  <li><a href="https://mixbikini.ru/">Beach Riot</a></li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="main-nav">
+        <div class="main-nav__login header-login clearfix"><a class="header-login__link"><span class="header-login__username">Александра</span></a>
+          <button class="js-top-nav-close" type="button"></button>
+        </div>
+        <div class="main-nav__city clearfix"><span class="header-contact__town header-contact__town--underline js-trigger-town-open">г. Москва</span></div>
+        <div class="container">
+          <ul class="main-nav__menu">
+            <li class="main-nav__item main-nav__item--green"><a class="main-nav__link" href="catalog.html">sale</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">новинки</a></li>
+            <li class="main-nav__item main-nav__item--subnav"><a class="main-nav__link main-nav__link--subnav" href="catalog.html">купальники</a>
+              <button class="js-main-nav-subnav-trigger" type="submit"></button>
+              <div class="main-nav__subnav clearfix">
+                <div class="main-nav__categories">
+                  <h3>Категории</h3>
+                  <ul class="main-nav__categories-list">
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-separate-swimsuits.png" alt="раздельные купальники"/></a></span><a href="catalog.html">Раздельные купальники</a></li>
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-swimsuits.png" alt="слитные купальники"/></a></span><a href="javascript:void(0);">Слитные купальники</a></li>
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-bra.png" alt="лифы"/></a></span><a href="catalog.html">Лифы</a></li>
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-smelting.png" alt="плавки"/></a></span><a href="catalog.html">Плавки</a></li>
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-hit-sales.png" alt="хиты продаж"/></a></span><a href="catalog.html">Хиты продаж</a></li>
+                  </ul>
+                </div>
+                <div class="main-nav__brands clearfix">
+                  <h3>Бренды</h3>
+                  <ul class="main-nav__brands-list">
+                    <li class="main-nav__brands-item"><a href="catalog.html">Beach Bunny</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Agua Bendita</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Luli Fama</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Empire of Summer</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Maaji</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Tany &amp; Anny</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Victoria’s</a></li>
+                    <li class="main-nav__brands-item"><a href="brands.html">Все бренды</a></li>
+                  </ul><img class="main-nav__brands-banner" src="./images/brands-banner.jpg" alt="известные бренды"/>
+                </div>
+                <div class="main-nav__sizes">
+                  <h3>Размеры</h3>
+                  <ul class="main-nav__sizes-list">
+                    <li class="main-nav__sizes-item"><a href="catalog.html">xs</a></li>
+                    <li class="main-nav__sizes-item"><a href="catalog.html">s</a></li>
+                    <li class="main-nav__sizes-item"><a href="catalog.html">m</a></li>
+                    <li class="main-nav__sizes-item"><a href="catalog.html">l</a></li>
+                    <li class="main-nav__sizes-item"><a href="catalog.html">xl</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">одежда и аксессуары</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="sertificate.html">подарочные карты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="reviews.html">отзывы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">контакты</a></li>
+            <li class="main-nav__item">
+              <button class="js-trigger-site-search-open" type="button"></button>
+            </li>
+          </ul>
+          <div class="main-nav__tel"><a class="contact-tel" href="tel:+84956450970">8 (495) 645-09-70</a><a class="contact-tel" href="tel:+88002505399">8-800-250-53-99</a></div>
+        </div>
+      </div>
+    </header><!-- /HEADER -->
+    <section class="top-section">
+      <h1 class="hidden">Интернет-магазин купальников и пляжной одежды MixBikini</h1>
+      <div class="container">
+        <ul class="benefits-slider clearfix">
+          <li class="benefits-slider__item">Бутик в центре Москвы</li>
+          <li class="benefits-slider__item">100% оригинальная продукция</li>
+          <li class="benefits-slider__item">Доставка по всему миру</li>
+          <li class="benefits-slider__item">Лёгкий возврат</li>
+          <li class="benefits-slider__item">Сертификаты качества продукции</li>
+        </ul>
+        <ul class="hero-slider">
+          <li class="hero-slider__item"><a class="hero-slider__link" href="catalog.html">
+              <picture>
+                <source media="(max-width: 480px)" srcset="./images/hero-mobile-12.jpg"/>
+                <source media="(max-width: 767px)" srcset="./images/hero-mobile-11.jpg"/><img src="./images/hero-1.jpg" alt="beach-bunny"/>
+              </picture></a></li>
+          <li class="hero-slider__item"><a class="hero-slider__link" href="catalog.html">
+              <picture>
+                <source media="(max-width: 480px)" srcset="./images/hero-mobile-22.jpg"/>
+                <source media="(max-width: 767px)" srcset="./images/hero-mobile-21.jpg"/><img src="./images/hero-2.jpg" alt="beach-bunny"/>
+              </picture></a></li>
+          <li class="hero-slider__item"><a class="hero-slider__link" href="catalog.html">
+              <picture>
+                <source media="(max-width: 480px)" srcset="./images/hero-mobile-32.jpg"/>
+                <source media="(max-width: 767px)" srcset="./images/hero-mobile-31.jpg"/><img src="./images/hero-3.jpg" alt="beach-bunny"/>
+              </picture></a></li>
+          <li class="hero-slider__item"><a class="hero-slider__link" href="catalog.html">
+              <picture>
+                <source media="(max-width: 480px)" srcset="./images/hero-mobile-42.jpg"/>
+                <source media="(max-width: 767px)" srcset="./images/hero-mobile-41.jpg"/><img src="./images/hero-4.jpg" alt="beach-bunny"/>
+              </picture></a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="home-products">
+      <div class="container">
+        <div class="home-products__inner" id="home-products">
+          <ul class="home-products__tabs">
+            <li class="home-products__tabs-control"><a href="#new-arrivals">новые поступления</a></li>
+            <li class="home-products__tabs-control"><a href="#hits">хиты продаж</a></li>
+            <li class="home-products__tabs-control"><a href="#sales">распродажа</a></li>
+            <li class="home-products__tabs-control"><a href="#pre-order">предзаказ</a></li>
+          </ul>
+          <div class="home-products__tabs-content" id="new-arrivals">
+            <div class="slider-products">
+              <div class="product-preview product--new"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-1.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Agua Bendita</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">15 500 &#8381;</span><span class="product-preview__group product-preview__group--new">новый сезон</span></div>
+              </div>
+              <div class="product-preview product--new"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-2.jpg" alt="плавки"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Beach Bunny</a><span class="product-preview__category">Плавки</span><span class="product-preview__price">9 400 &#8381;</span><span class="product-preview__group product-preview__group--new">новый сезон</span></div>
+              </div>
+              <div class="product-preview product--new"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-3.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">luli fama</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">35 000 &#8381;</span><span class="product-preview__group product-preview__group--new">новый сезон</span></div>
+              </div>
+              <div class="product-preview product--new"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-4.jpg" alt="лиф"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Maaji</a><span class="product-preview__category">Лиф</span><span class="product-preview__price">20 500 &#8381;</span><span class="product-preview__group product-preview__group--new">новый сезон</span></div>
+              </div>
+              <div class="product-preview product--new"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-5.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Touch Secret</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">13 350 &#8381;</span><span class="product-preview__group product-preview__group--new">новый сезон</span></div>
+              </div>
+              <div class="product-preview product--new"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-1.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Agua Bendita</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">15 500 &#8381;</span><span class="product-preview__group product-preview__group--new">новый сезон</span></div>
+              </div>
+              <div class="product-preview product--new"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-2.jpg" alt="плавки"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Beach Bunny</a><span class="product-preview__category">Плавки</span><span class="product-preview__price">9 400 &#8381;</span><span class="product-preview__group product-preview__group--new">новый сезон</span></div>
+              </div>
+              <div class="product-preview product--new"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-3.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">luli fama</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">35 000 &#8381;</span><span class="product-preview__group product-preview__group--new">новый сезон</span></div>
+              </div>
+              <div class="product-preview product--new"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-4.jpg" alt="лиф"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Maaji</a><span class="product-preview__category">Лиф</span><span class="product-preview__price">20 500 &#8381;</span><span class="product-preview__group product-preview__group--new">новый сезон</span></div>
+              </div>
+              <div class="product-preview product--new"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-5.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Touch Secret</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">13 350 &#8381;</span><span class="product-preview__group product-preview__group--new">новый сезон</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="home-products__tabs-content" id="hits">
+            <div class="slider-products">
+              <div class="product-preview product--hits"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-1.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Agua Bendita</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">15 500 &#8381;</span><span class="product-preview__group product-preview__group--hits">хит продаж</span></div>
+              </div>
+              <div class="product-preview product--hits"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-3.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">luli fama</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">35 000 &#8381;</span><span class="product-preview__group product-preview__group--hits">хит продаж</span></div>
+              </div>
+              <div class="product-preview product--hits"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-2.jpg" alt="плавки"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Beach Bunny</a><span class="product-preview__category">Плавки</span><span class="product-preview__price">9 400 &#8381;</span><span class="product-preview__group product-preview__group--hits">хит продаж</span></div>
+              </div>
+              <div class="product-preview product--hits"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-4.jpg" alt="лиф"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Maaji</a><span class="product-preview__category">Лиф</span><span class="product-preview__price">20 500 &#8381;</span><span class="product-preview__group product-preview__group--hits">хит продаж</span></div>
+              </div>
+              <div class="product-preview product--hits"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-5.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Touch Secret</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">13 350 &#8381;</span><span class="product-preview__group product-preview__group--hits">хит продаж</span></div>
+              </div>
+              <div class="product-preview product--hits"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-1.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Agua Bendita</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">15 500 &#8381;</span><span class="product-preview__group product-preview__group--hits">хит продаж</span></div>
+              </div>
+              <div class="product-preview product--hits"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-3.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">luli fama</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">35 000 &#8381;</span><span class="product-preview__group product-preview__group--hits">хит продаж</span></div>
+              </div>
+              <div class="product-preview product--hits"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-2.jpg" alt="плавки"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Beach Bunny</a><span class="product-preview__category">Плавки</span><span class="product-preview__price">9 400 &#8381;</span><span class="product-preview__group product-preview__group--hits">хит продаж</span></div>
+              </div>
+              <div class="product-preview product--hits"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-4.jpg" alt="лиф"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Maaji</a><span class="product-preview__category">Лиф</span><span class="product-preview__price">20 500 &#8381;</span><span class="product-preview__group product-preview__group--hits">хит продаж</span></div>
+              </div>
+              <div class="product-preview product--hits"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-5.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Touch Secret</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">13 350 &#8381;</span><span class="product-preview__group product-preview__group--hits">хит продаж</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="home-products__tabs-content" id="sales">
+            <div class="slider-products">
+              <div class="product-preview product--sales"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-1.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Agua Bendita</a><span class="product-preview__category">Купальник</span><span class="product-preview__price product-preview__price--sales">15 500 &#8381;</span><span class="product-preview__old-price">20 000 &#8381;</span></div>
+              </div>
+              <div class="product-preview product--sales"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-3.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">luli fama</a><span class="product-preview__category">Купальник</span><span class="product-preview__price product-preview__price--sales">35 000 &#8381;</span><span class="product-preview__old-price">37 000 &#8381;</span></div>
+              </div>
+              <div class="product-preview product--sales"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-2.jpg" alt="плавки"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Beach Bunny</a><span class="product-preview__category">Плавки</span><span class="product-preview__price product-preview__price--sales">9 400 &#8381;</span><span class="product-preview__old-price">10 500 &#8381;</span></div>
+              </div>
+              <div class="product-preview product--sales"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-5.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Touch Secret</a><span class="product-preview__category">Купальник</span><span class="product-preview__price product-preview__price--sales">13 350 &#8381;</span><span class="product-preview__old-price">15 000 &#8381;</span></div>
+              </div>
+              <div class="product-preview product--sales"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-4.jpg" alt="лиф"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Maaji</a><span class="product-preview__category">Лиф</span><span class="product-preview__price product-preview__price--sales">20 500 &#8381;</span><span class="product-preview__old-price">21 000 &#8381;</span></div>
+              </div>
+              <div class="product-preview product--sales"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-1.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Agua Bendita</a><span class="product-preview__category">Купальник</span><span class="product-preview__price product-preview__price--sales">15 500 &#8381;</span><span class="product-preview__old-price">20 000 &#8381;</span></div>
+              </div>
+              <div class="product-preview product--sales"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-3.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">luli fama</a><span class="product-preview__category">Купальник</span><span class="product-preview__price product-preview__price--sales">35 000 &#8381;</span><span class="product-preview__old-price">37 000 &#8381;</span></div>
+              </div>
+              <div class="product-preview product--sales"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-2.jpg" alt="плавки"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Beach Bunny</a><span class="product-preview__category">Плавки</span><span class="product-preview__price product-preview__price--sales">9 400 &#8381;</span><span class="product-preview__old-price">10 500 &#8381;</span></div>
+              </div>
+              <div class="product-preview product--sales"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-5.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Touch Secret</a><span class="product-preview__category">Купальник</span><span class="product-preview__price product-preview__price--sales">13 350 &#8381;</span><span class="product-preview__old-price">15 000 &#8381;</span></div>
+              </div>
+              <div class="product-preview product--sales"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-4.jpg" alt="лиф"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Maaji</a><span class="product-preview__category">Лиф</span><span class="product-preview__price product-preview__price--sales">20 500 &#8381;</span><span class="product-preview__old-price">21 000 &#8381;</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="home-products__tabs-content" id="pre-order">
+            <div class="slider-products">
+              <div class="product-preview"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-1.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Agua Bendita</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">15 500 &#8381;</span></div>
+              </div>
+              <div class="product-preview"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-2.jpg" alt="плавки"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Beach Bunny</a><span class="product-preview__category">Плавки</span><span class="product-preview__price">9 400 &#8381;</span></div>
+              </div>
+              <div class="product-preview"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-4.jpg" alt="лиф"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Maaji</a><span class="product-preview__category">Лиф</span><span class="product-preview__price">20 500 &#8381;</span></div>
+              </div>
+              <div class="product-preview"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-3.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">luli fama</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">35 000 &#8381;</span></div>
+              </div>
+              <div class="product-preview"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-5.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Touch Secret</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">13 350 &#8381;</span></div>
+              </div>
+              <div class="product-preview"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-1.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Agua Bendita</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">15 500 &#8381;</span></div>
+              </div>
+              <div class="product-preview"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-2.jpg" alt="плавки"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Beach Bunny</a><span class="product-preview__category">Плавки</span><span class="product-preview__price">9 400 &#8381;</span></div>
+              </div>
+              <div class="product-preview"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-4.jpg" alt="лиф"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Maaji</a><span class="product-preview__category">Лиф</span><span class="product-preview__price">20 500 &#8381;</span></div>
+              </div>
+              <div class="product-preview"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-3.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">luli fama</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">35 000 &#8381;</span></div>
+              </div>
+              <div class="product-preview"><a class="product-preview__image-wrap" href="card.html"><img src="./images/product-5.jpg" alt="купальник"/></a>
+                <div class="product-preview__info"><a class="product-preview__brand" href="card.html">Touch Secret</a><span class="product-preview__category">Купальник</span><span class="product-preview__price">13 350 &#8381;</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="beachwear">
+      <div class="container">
+        <div class="beachwear__inner">
+          <h2>Всё, что нужно для пляжного отдыха</h2>
+          <div class="row">
+            <div class="col-sm-6"><a class="beachwear__item" href="catalog.html"><img src="./images/beachwear-clothing-bg.jpg" alt="пляжная одежда"/><span class="beachwear__title beachwear__title--white">пляжная одежда</span></a></div>
+            <div class="col-sm-6"><a class="beachwear__item" href="catalog.html"><img src="./images/beachwear-accessories-bg.jpg" alt="аксессуары"/><span class="beachwear__title">aксессуары</span></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="guide">
+      <div class="container">
+        <div class="guide__inner">
+          <h2>Модный <em>GUIDE</em></h2>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="guide__item clearfix"><a class="guide__banner" href="article.html"><img src="./images/guide-banner-1.jpg" alt="20 лучших купальниклв"/></a>
+                <div class="guide__description">
+                  <h3><a href="article.html">20 лучших слитных купальников</a></h3>
+                  <p>Cамые красивые модели купальников предстоящего пляжного сезона</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="guide__item clearfix"><a class="guide__banner" href="article.html"><img src="./images/guide-banner-2.jpg" alt="20 лучших купальниклв"/></a>
+                <div class="guide__description">
+                  <h3><a href="article.html">вечеринка у бассейна: что НАдеть?</a></h3>
+                  <p>Как правильно подобрать купальник. Советы стилистов MixBikini</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12"><a class="guide__all-articles" href="articles.html">Все статьи</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="container">
+        <div class="subscribe__inner clearfix">
+          <h4>Новые коллекции, распродажи, акции и статьи в нашей рассылке</h4>
+          <form class="subscribe__form" action="" id="home-subscribe">
+            <input class="form-control" type="text" name="username" placeholder="Ваше имя"/>
+            <input class="form-control" type="email" name="email" placeholder="E-mail" required="required"/>
+            <button class="button-form">подписаться</button><span class="subscribe__status-login subscribe__status-login--wrong" id="home-subscribe-error"> </span>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="instagram-photo">
+      <div class="container">
+        <div class="instagram-photo__inner">
+          <h2>#mixbikini</h2>
+          <ul class="instagram-photo__list clearfix">
+            <li class="instagram-photo__item"><a href="javascript:void(0);"><img src="./images/instagram-photo-1.jpg" alt="instagram-miksbikini"></a></li>
+            <li class="instagram-photo__item"><a href="javascript:void(0);"><img src="./images/instagram-photo-2.jpg" alt="instagram-miksbikini"></a></li>
+            <li class="instagram-photo__item"><a href="javascript:void(0);"><img src="./images/instagram-photo-3.jpg" alt="instagram-miksbikini"></a></li>
+            <li class="instagram-photo__item"><a href="javascript:void(0);"><img src="./images/instagram-photo-4.jpg" alt="instagram-miksbikini"></a></li>
+            <li class="instagram-photo__item"><a href="javascript:void(0);"><img src="./images/instagram-photo-5.jpg" alt="instagram-miksbikini"></a></li>
+            <li class="instagram-photo__item"><a href="javascript:void(0);"><img src="./images/instagram-photo-1.jpg" alt="instagram-miksbikini"></a></li>
+            <li class="instagram-photo__item"><a href="javascript:void(0);"><img src="./images/instagram-photo-3.jpg" alt="instagram-miksbikini"></a></li>
+          </ul><span class="instagram-photo__subscribe">Подписывайтесь на наш инстаграм <a href="javascript:void(0);">@mixbikiniru</a> и следите за новыми коллекциями</span>
+        </div>
+      </div>
+    </section>
+    <section class="about-store">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="about-store__description">
+              <div class="about-store__description-content static-content"><h5>Интернет-магазин купальников и пляжной одежды</h5>
+<p>MixBikini – мультибрендовый бутик пляжной моды. На нашем сайте мы собрали модные модели купальников, пляжной одежды и аксессуаров от дизайнеров из США, Латинской Америки, Европы и др. Каждая девушка сможет подобрать у нас стильный образ для своего незабываемого отдыха и завидных фотографий с пляжа. В режиме онлайн можно подобрать нужный размер, воспользовавшись таблицей, и заказать курьерскую доставку с примеркой на дом.&nbsp;</p>
+<h5>Большой ассортимент товара концентрирован в основных разделах нашего сайта:&nbsp;</h5>
+<p></p>
+<ul>
+<li>Купальники</li>
+<li>Пляжная одежда</li>
+<li>Аксессуары</li>
+</ul>
+<p></p>
+<p></p>
+<p>Если вы любите экономить, то для вас также найдется выгодное предложение. Магазин женских купальников постоянно проводит акции и делает заметные скидки на некоторые купальники и другую продукцию. Вы можете купить купальник недорого и поразить всех на отдыхе.</p>
+<h5>Магазин модных купальников MixBikini – почему покупать у нас выгодно?</h5>
+<p>Заказывая купальники для женщин в нашем интернет-магазине, вы получаете множество преимуществ.&nbsp;В первую очередь, это быстрая доставка. Оформив заказ онлайн, его можно забрать в этот же день, если вы находитесь в Москве. Доставка в другие регионы или страны осуществляется курьерской службой. Сроки и стоимость доставки зависят от удаленности проживания. Доставка заказа не должна занимать больше двух недель с момента совершения заказа.</p>
+<p>Во-вторых, это качественный сервис. Если перед совершением заказа вы хотите уточнить какие-то детали о купальнике, подойдет ли вам указанный в таблице размер, из какого материала он пошит и прочее, это можно уточнить у оператора клиентской службы по телефону. Наши консультанты постараются ответить на ваши вопросы, а также помогут оформить заказ.
+</p>
+              </div>
+              <button class="collapse-text about-store__description-collapse off">Показать полностью</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="about-store__services">
+              <h4>доставка</h4>
+              <p>Доставка с примеркой по всей <br> России – от 2-х дней, по миру — <br> от 7  до 15 дней</p><a class="about-store__know-more" href="javascript:void(0);">Подробнее</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="about-store__services">
+              <h4>возврат</h4>
+              <p>Если вам не подошел <br> купальник, вы можете вернуть его <br> в течении 14 дней</p><a class="about-store__know-more" href="javascript:void(0);">Подробнее</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="about-store__services about-store__services--no-border">
+              <h4>сервис</h4>
+              <p>Наши консультанты помогут советом при выборе купальника. Мы доступны 7 дней в неделю с 11 до 20 ч. по тел. 8 (800) 250-53-99</p><a class="about-store__know-more" href="javascript:void(0);">Написать на e-mail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__top">
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <h4 class="site-footer__according-heading">о магазине</h4>
+              <ul class="site-footer__menu">
+                <li class="site-footer__item"><a href="404.html">Компания</a></li>
+                <li class="site-footer__item"><a href="contacts.html">Контакты</a></li>
+                <li class="site-footer__item"><a href="reviews.html">Отзывы</a></li>
+                <li class="site-footer__item"><a href="404.html">Условия продажи</a></li>
+                <li class="site-footer__item"><a href="articles.html">Статьи</a></li>
+                <li class="site-footer__item"><a href="news.html">СМИ о нас</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <h4 class="site-footer__according-heading">покупателям</h4>
+              <ul class="site-footer__menu">
+                <li class="site-footer__item"><a href="javascript:void(0);">Оплата</a></li>
+                <li class="site-footer__item"><a href="javascript:void(0);">Доставка</a></li>
+                <li class="site-footer__item"><a href="javascript:void(0);">Обмен и возврат</a></li>
+                <li class="site-footer__item"><a href="javascript:void(0);">Статус доставки</a></li>
+                <li class="site-footer__item"><a href="javascript:void(0);">Таблица размеров</a></li>
+                <li class="site-footer__item"><a href="sertificate.html">Подарочные карты</a></li>
+                <li class="site-footer__item"><a href="javascript:void(0);">Программа лояльности</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <h4 class="site-footer__according-heading">принимаем к оплате</h4>
+              <div class="site-footer__payment-option"><img src="./images/payment-visa.png" alt="visa"/><img src="./images/payment-master-card.png" alt="master-card"/>
+                <p>Вы также можете оплатить покупки наличными в магазине, или при получении.</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <div class="site-footer__subscribe-wrap">
+                <h4 class="site-footer__according-heading">подписка на новости mixbikini</h4>
+                <form class="site-footer__subscribe" action="" id="footer-subscribe">
+                  <input class="form-control" type="email" name="email" placeholder="E-mail" required="required"/>
+                  <button class="button-form button-form--orange" type="submit">ок</button><span class="subscribe__status-login subscribe__status-login--wrong" id="footer-subscribe-error"></span>
+                </form>
+              </div>
+              <div class="site-footer__social-wrap">
+                <h4>мы в соц.сетях</h4>
+                <ul class="site-footer__social social">
+                  <li class="social__link"><a href="https://instagram.com/mixbikiniru" target="__blank"><img src="./images/icons/instagram.png" alt="instagram"></a></li>
+                  <li class="social__link"><a href="https://www.facebook.com/mixbikiniru" target="__blank"><img src="./images/icons/facebook.png" alt="facebook"></a></li>
+                  <li class="social__link"><a href="https://vk.com/mixbikiniru" target="__blank"><img src="./images/icons/vkontakte.png" alt="vkontakte"></a></li>
+                  <li class="social__link"><a href="https://ok.ru/group/58192199614513" target="__blank"><img src="./images/icons/odnoklasniki.png" alt="odnoklasniki"></a></li>
+                  <li class="social__link"><a href="https://www.youtube.com/user/MixBikini/feed" target="__blank"><img src="./images/icons/youtube.png" alt="youtube"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-to-top">
+        <div class="scroll-to-top__control js-scroll-to-top"></div>
+      </div>
+      <div class="container">
+        <div class="copyright clearfix">
+          <div class="copyright__col-left">© MixBikini, 2017. Все права защищены.</div>
+          <div class="copyright__col-right"><a class="copyright__link" href="javascript:void(0);">Оферта</a><a class="copyright__link" href="javascript:void(0);">Политика конфиденциальности</a></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

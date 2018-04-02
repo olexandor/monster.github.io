@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <!-- Seo info-->
+    <title>Template</title>
+    <meta name="description" content="Developed by YoungDevelopers team"/>
+    <!-- Styles-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- Favicons-->
+    <meta property="og:image" content="path/to/image.jpg"/>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"/>
+    <!-- Browsers Colorbar-->
+    <meta name="theme-color" content="#000"/>
+    <meta name="msapplication-navbutton-color" content="#000"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000"/>
+    <!-- js-->
+    <script src="js/libs.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx6AzWFIJkW0zg4M_GBUZawf_xs4NzNpw&amp;callback=initMap" async="async"></script>
+  </head>
+  <body>
+    <div class="overlay"></div><!-- HEADER -->
+    <header class="site-header">
+      <div class="site-header__top">
+        <div class="container">
+          <button class="mobile-nav-btn js-top-nav-open"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+          <button class="js-trigger-site-search-open mobile-visible" type="button"></button>
+          <div class="header-contact">
+            <div class="header-contact__tel"><a class="contact-tel" href="tel:+84956450970">8 (495) 645-09-70</a><a class="contact-tel" href="tel:+88002505399">8-800-250-53-99</a></div>
+            <div class="header-contact__city"><span class="header-contact__town header-contact__town--underline js-trigger-town-open">г. Москва</span><span class="header-contact__street">Ветошный переулок, д. 9</span></div>
+          </div><a class="header-logo" href="index.html"><img src="./images/logo.jpg" alt="логотип"/></a>
+          <div class="header-actions">
+            <div class="header-actions__item header-login"><a class="header-login__link" href="cabinet-profile.html"><span class="header-login__username">Александра</span></a></div>
+            <div class="header-actions__item header-favorite"><a class="header-favorite__link" href="favorite.html"></a></div>
+            <div class="header-actions__item header-cart"><a class="header-cart__link" href="cart.html"></a></div>
+          </div>
+        </div>
+        <div class="live-town clearfix" style="display:none;">
+          <div class="container relative">
+            <div class="live-town__current">Ваш город: <span class="header-contact__town">Александровск-Сахалинский</span></div>
+            <form class="live-town__search" action="" id="search-town">
+              <input class="live-town__search-control" type="text" name="text" placeholder="Поиск города" id="town-search"/>
+              <button class="button-form" type="submit">ок</button>
+              <button class="live-town__close js-trigger-town-close" type="button"></button>
+            </form>
+          </div>
+        </div>
+        <div class="header__site-search">
+          <div class="container">
+            <form class="site-search" action="" id="site-search">
+              <div class="site-search__controls">
+                <input class="site-search__entry-field" type="text" name="text" placeholder="Поиск"/>
+                <button class="js-trigger-site-search-close" type="button"></button>
+              </div>
+              <div class="site-search__result"><span class="site-search__result-category">бренд</span>
+                <ul class="site-search__result-list">
+                  <li><a href="https://mixbikini.ru/">Beach Bunny</a></li>
+                  <li><a href="https://mixbikini.ru/">Beach Riot</a></li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="main-nav">
+        <div class="main-nav__login header-login clearfix"><a class="header-login__link"><span class="header-login__username">Александра</span></a>
+          <button class="js-top-nav-close" type="button"></button>
+        </div>
+        <div class="main-nav__city clearfix"><span class="header-contact__town header-contact__town--underline js-trigger-town-open">г. Москва</span></div>
+        <div class="container">
+          <ul class="main-nav__menu">
+            <li class="main-nav__item main-nav__item--green"><a class="main-nav__link" href="catalog.html">sale</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">новинки</a></li>
+            <li class="main-nav__item main-nav__item--subnav"><a class="main-nav__link main-nav__link--subnav" href="catalog.html">купальники</a>
+              <button class="js-main-nav-subnav-trigger" type="submit"></button>
+              <div class="main-nav__subnav clearfix">
+                <div class="main-nav__categories">
+                  <h3>Категории</h3>
+                  <ul class="main-nav__categories-list">
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-separate-swimsuits.png" alt="раздельные купальники"/></a></span><a href="catalog.html">Раздельные купальники</a></li>
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-swimsuits.png" alt="слитные купальники"/></a></span><a href="javascript:void(0);">Слитные купальники</a></li>
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-bra.png" alt="лифы"/></a></span><a href="catalog.html">Лифы</a></li>
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-smelting.png" alt="плавки"/></a></span><a href="catalog.html">Плавки</a></li>
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-hit-sales.png" alt="хиты продаж"/></a></span><a href="catalog.html">Хиты продаж</a></li>
+                  </ul>
+                </div>
+                <div class="main-nav__brands clearfix">
+                  <h3>Бренды</h3>
+                  <ul class="main-nav__brands-list">
+                    <li class="main-nav__brands-item"><a href="catalog.html">Beach Bunny</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Agua Bendita</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Luli Fama</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Empire of Summer</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Maaji</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Tany &amp; Anny</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Victoria’s</a></li>
+                    <li class="main-nav__brands-item"><a href="brands.html">Все бренды</a></li>
+                  </ul><img class="main-nav__brands-banner" src="./images/brands-banner.jpg" alt="известные бренды"/>
+                </div>
+                <div class="main-nav__sizes">
+                  <h3>Размеры</h3>
+                  <ul class="main-nav__sizes-list">
+                    <li class="main-nav__sizes-item"><a href="catalog.html">xs</a></li>
+                    <li class="main-nav__sizes-item"><a href="catalog.html">s</a></li>
+                    <li class="main-nav__sizes-item"><a href="catalog.html">m</a></li>
+                    <li class="main-nav__sizes-item"><a href="catalog.html">l</a></li>
+                    <li class="main-nav__sizes-item"><a href="catalog.html">xl</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">одежда и аксессуары</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="sertificate.html">подарочные карты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="reviews.html">отзывы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">контакты</a></li>
+            <li class="main-nav__item">
+              <button class="js-trigger-site-search-open" type="button"></button>
+            </li>
+          </ul>
+          <div class="main-nav__tel"><a class="contact-tel" href="tel:+84956450970">8 (495) 645-09-70</a><a class="contact-tel" href="tel:+88002505399">8-800-250-53-99</a></div>
+        </div>
+      </div>
+    </header><!-- /HEADER -->
+    <section class="top-section breadcrumb-wrap">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Главная</a></li>
+          <li>Личный кабинет</li>
+        </ul>
+      </div>
+    </section>
+    <section class="cabinet">
+      <div class="container">
+        <h1>Личный кабинет</h1>
+        <div class="row">
+          <div class="col-sm-2">
+            <ul class="cabinet__menu">
+              <li class="cabinet__menu-item active"><a href="cabinet-profile.html">Мои данные</a></li>
+              <li class="cabinet__menu-item"><a href="cabinet-adress.html">Мои адреса</a></li>
+              <li class="cabinet__menu-item"><a href="cabinet-orders.html">Мои покупки</a></li>
+              <li class="cabinet__menu-item"><a href="javascript:void(0);">Выйти</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-10">
+            <div class="cabinet__main">
+              <form class="cabinet-profile" action="" id="profile">
+                <h2>Мои данные</h2>
+                <input class="form-control form-control--center" type="text" name="username" placeholder="Имя"/>
+                <input class="form-control form-control--center" type="text" name="surname" placeholder="Фамилия"/>
+                <input class="form-control form-control--center date-mask" type="text" name="date-of-birth" placeholder="Дата рождения"/>
+                <input class="form-control form-control--center phone-mask" type="tel" name="phone" placeholder="Телефон"/>
+                <input class="form-control form-control--center" type="email" name="email" placeholder="E-mail"/>
+                <div class="cabinet-profile__subscribe">
+                  <input class="cabinet-profile__checkbox" type="checkbox" name="subscribe" id="profile-subscribe"/>
+                  <label for="profile-subscribe">Хочу получать рассылки от MixBikini</label>
+                </div>
+                <button class="button-form" type="submit">Сохранить</button>
+                <button class="cabinet-profile__change-password off" type="button">Сменить пароль</button>
+                <div class="cabinet-profile__password-group">
+                  <input class="form-control form-control--center" type="password" name="new-password" placeholder="Новый пароль"/>
+                  <input class="form-control form-control--center" type="password" name="confirm-new-password" placeholder="Повторите новый пароль"/>
+                  <button class="button-form" type="submit">Сохранить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__top">
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <h4 class="site-footer__according-heading">о магазине</h4>
+              <ul class="site-footer__menu">
+                <li class="site-footer__item"><a href="404.html">Компания</a></li>
+                <li class="site-footer__item"><a href="contacts.html">Контакты</a></li>
+                <li class="site-footer__item"><a href="reviews.html">Отзывы</a></li>
+                <li class="site-footer__item"><a href="404.html">Условия продажи</a></li>
+                <li class="site-footer__item"><a href="articles.html">Статьи</a></li>
+                <li class="site-footer__item"><a href="news.html">СМИ о нас</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <h4 class="site-footer__according-heading">покупателям</h4>
+              <ul class="site-footer__menu">
+                <li class="site-footer__item"><a href="javascript:void(0);">Оплата</a></li>
+                <li class="site-footer__item"><a href="javascript:void(0);">Доставка</a></li>
+                <li class="site-footer__item"><a href="javascript:void(0);">Обмен и возврат</a></li>
+                <li class="site-footer__item"><a href="javascript:void(0);">Статус доставки</a></li>
+                <li class="site-footer__item"><a href="javascript:void(0);">Таблица размеров</a></li>
+                <li class="site-footer__item"><a href="sertificate.html">Подарочные карты</a></li>
+                <li class="site-footer__item"><a href="javascript:void(0);">Программа лояльности</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <h4 class="site-footer__according-heading">принимаем к оплате</h4>
+              <div class="site-footer__payment-option"><img src="./images/payment-visa.png" alt="visa"/><img src="./images/payment-master-card.png" alt="master-card"/>
+                <p>Вы также можете оплатить покупки наличными в магазине, или при получении.</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <div class="site-footer__subscribe-wrap">
+                <h4 class="site-footer__according-heading">подписка на новости mixbikini</h4>
+                <form class="site-footer__subscribe" action="" id="footer-subscribe">
+                  <input class="form-control" type="email" name="email" placeholder="E-mail" required="required"/>
+                  <button class="button-form button-form--orange" type="submit">ок</button><span class="subscribe__status-login subscribe__status-login--wrong" id="footer-subscribe-error"></span>
+                </form>
+              </div>
+              <div class="site-footer__social-wrap">
+                <h4>мы в соц.сетях</h4>
+                <ul class="site-footer__social social">
+                  <li class="social__link"><a href="https://instagram.com/mixbikiniru" target="__blank"><img src="./images/icons/instagram.png" alt="instagram"></a></li>
+                  <li class="social__link"><a href="https://www.facebook.com/mixbikiniru" target="__blank"><img src="./images/icons/facebook.png" alt="facebook"></a></li>
+                  <li class="social__link"><a href="https://vk.com/mixbikiniru" target="__blank"><img src="./images/icons/vkontakte.png" alt="vkontakte"></a></li>
+                  <li class="social__link"><a href="https://ok.ru/group/58192199614513" target="__blank"><img src="./images/icons/odnoklasniki.png" alt="odnoklasniki"></a></li>
+                  <li class="social__link"><a href="https://www.youtube.com/user/MixBikini/feed" target="__blank"><img src="./images/icons/youtube.png" alt="youtube"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-to-top">
+        <div class="scroll-to-top__control js-scroll-to-top"></div>
+      </div>
+      <div class="container">
+        <div class="copyright clearfix">
+          <div class="copyright__col-left">© MixBikini, 2017. Все права защищены.</div>
+          <div class="copyright__col-right"><a class="copyright__link" href="javascript:void(0);">Оферта</a><a class="copyright__link" href="javascript:void(0);">Политика конфиденциальности</a></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <!-- Seo info-->
+    <title>Template</title>
+    <meta name="description" content="Developed by YoungDevelopers team"/>
+    <!-- Styles-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- Favicons-->
+    <meta property="og:image" content="path/to/image.jpg"/>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"/>
+    <!-- Browsers Colorbar-->
+    <meta name="theme-color" content="#000"/>
+    <meta name="msapplication-navbutton-color" content="#000"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000"/>
+    <!-- js-->
+    <script src="js/libs.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx6AzWFIJkW0zg4M_GBUZawf_xs4NzNpw&amp;callback=initMap" async="async"></script>
+  </head>
+  <body>
+    <div class="overlay"></div><!-- HEADER WITH INFORM BLOCK -->
+    <header class="site-header has-inform-block">
+      <div class="header-inform">
+        <div class="container">
+          <div class="header-inform__inner">
+            <div class="header-inform__tel"><span>Помощь в оформлении заказа: </span><a class="contact-tel" href="tel:+88002505399">8 (800) 250-53-99</a></div><a class="header-logo" href="index.html"><img src="./images/logo.jpg" alt="логотип"/></a>
+            <div class="header-inform__work-time">с 11:00 до 20:00 (МСК)</div>
+          </div>
+        </div>
+      </div>
+      <div class="site-header__top">
+        <div class="container">
+          <button class="mobile-nav-btn js-top-nav-open"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+          <button class="js-trigger-site-search-open mobile-visible" type="button"></button>
+          <div class="header-contact">
+            <div class="header-contact__tel"><a class="contact-tel" href="tel:+84956450970">8 (495) 645-09-70</a><a class="contact-tel" href="tel:+88002505399">8-800-250-53-99</a></div>
+            <div class="header-contact__city"><span class="header-contact__town header-contact__town--underline js-trigger-town-open">г. Москва</span><span class="header-contact__street">Ветошный переулок, д. 9</span></div>
+          </div><a class="header-logo" href="index.html"><img src="./images/logo.jpg" alt="логотип"/></a>
+          <div class="header-actions">
+            <div class="header-actions__item header-login"><a class="header-login__link" href="cabinet-profile.html"><span class="header-login__username">Александра</span></a></div>
+            <div class="header-actions__item header-favorite"><a class="header-favorite__link" href="favorite.html"><span class="header-favorite__badge">99</span></a></div>
+            <div class="header-actions__item header-cart"><a class="header-cart__link" href="cart.html"><span class="header-cart__badge">99</span></a></div>
+          </div>
+        </div>
+        <div class="live-town clearfix" style="display:none;">
+          <div class="container relative">
+            <div class="live-town__current">Ваш город: <span class="header-contact__town">Александровск-Сахалинский</span></div>
+            <form class="live-town__search" action="" id="search-town">
+              <input class="live-town__search-control" type="text" name="text" placeholder="Поиск города" id="town-search"/>
+              <button class="button-form" type="submit">ок</button>
+              <button class="live-town__close js-trigger-town-close" type="button"></button>
+            </form>
+          </div>
+        </div>
+        <div class="header__site-search">
+          <div class="container">
+            <form class="site-search" action="" id="site-search">
+              <div class="site-search__controls">
+                <input class="site-search__entry-field" type="text" name="text" placeholder="Поиск"/>
+                <button class="js-trigger-site-search-close" type="button"></button>
+              </div>
+              <div class="site-search__result"><span class="site-search__result-category">бренд</span>
+                <ul class="site-search__result-list">
+                  <li><a href="https://mixbikini.ru/">Beach Bunny</a></li>
+                  <li><a href="https://mixbikini.ru/">Beach Riot</a></li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="main-nav">
+        <div class="main-nav__login header-login clearfix"><a class="header-login__link"><span class="header-login__username">Александра</span></a>
+          <button class="js-top-nav-close" type="button"></button>
+        </div>
+        <div class="main-nav__city clearfix"><span class="header-contact__town header-contact__town--underline js-trigger-town-open">г. Москва</span></div>
+        <div class="container">
+          <ul class="main-nav__menu">
+            <li class="main-nav__item main-nav__item--green"><a class="main-nav__link" href="catalog.html">sale</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">новинки</a></li>
+            <li class="main-nav__item main-nav__item--subnav"><a class="main-nav__link main-nav__link--subnav" href="catalog.html">купальники</a>
+              <button class="js-main-nav-subnav-trigger" type="submit"></button>
+              <div class="main-nav__subnav clearfix">
+                <div class="main-nav__categories">
+                  <h3>Категории</h3>
+                  <ul class="main-nav__categories-list">
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-separate-swimsuits.png" alt="раздельные купальники"/></a></span><a href="catalog.html">Раздельные купальники</a></li>
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-swimsuits.png" alt="слитные купальники"/></a></span><a href="javascript:void(0);">Слитные купальники</a></li>
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-bra.png" alt="лифы"/></a></span><a href="catalog.html">Лифы</a></li>
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-smelting.png" alt="плавки"/></a></span><a href="catalog.html">Плавки</a></li>
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-hit-sales.png" alt="хиты продаж"/></a></span><a href="catalog.html">Хиты продаж</a></li>
+                  </ul>
+                </div>
+                <div class="main-nav__brands clearfix">
+                  <h3>Бренды</h3>
+                  <ul class="main-nav__brands-list">
+                    <li class="main-nav__brands-item"><a href="catalog.html">Beach Bunny</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Agua Bendita</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Luli Fama</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Empire of Summer</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Maaji</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Tany &amp; Anny</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Victoria’s</a></li>
+                    <li class="main-nav__brands-item"><a href="brands.html">Все бренды</a></li>
+                  </ul><img class="main-nav__brands-banner" src="./images/brands-banner.jpg" alt="известные бренды"/>
+                </div>
+                <div class="main-nav__sizes">
+                  <h3>Размеры</h3>
+                  <ul class="main-nav__sizes-list">
+                    <li class="main-nav__sizes-item"><a href="catalog.html">xs</a></li>
+                    <li class="main-nav__sizes-item"><a href="catalog.html">s</a></li>
+                    <li class="main-nav__sizes-item"><a href="catalog.html">m</a></li>
+                    <li class="main-nav__sizes-item"><a href="catalog.html">l</a></li>
+                    <li class="main-nav__sizes-item"><a href="catalog.html">xl</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">одежда и аксессуары</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">подарочные карты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">отзывы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">контакты</a></li>
+            <li class="main-nav__item">
+              <button class="js-trigger-site-search-open" type="button"></button>
+            </li>
+          </ul>
+          <div class="main-nav__tel"><a class="contact-tel" href="tel:+84956450970">8 (495) 645-09-70</a><a class="contact-tel" href="tel:+88002505399">8-800-250-53-99</a></div>
+        </div>
+      </div>
+    </header><!-- /HEADER -->
+    <section class="order">
+      <div class="order__step clearfix">
+        <div class="container">
+          <div class="order__step-inner">
+            <div class="order__step-ordering">Оформление заказа</div>
+            <div class="order__step-delimer"></div>
+            <div class="order__step-confirm confirm">Подтверждение</div>
+          </div>
+        </div>
+      </div>
+      <form class="order-confirm" action="" id="order-confirm">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="order-confirm__data">
+                <div class="order-confirm__data-change clearfix"> <span>Проверьте данные вашего заказа.</span><a href="order.html">Изменить</a></div>
+                <ul class="order-confirm__data-list">
+                  <li class="order-confirm__data-option"><span class="order-confirm__data-caption">Покупатель:</span><span class="order-confirm__data-value">Юлия Анрилова, +7 (953) 351-95-15, myemail@mail.ru</span></li>
+                  <li class="order-confirm__data-option"><span class="order-confirm__data-caption">Адрес доставки:</span><span class="order-confirm__data-value">Россия, 195245, г. Александровск-Сахалинский, д. 8, кв. 46</span></li>
+                  <li class="order-confirm__data-option"><span class="order-confirm__data-caption">Способ доставки:</span><span class="order-confirm__data-value">Курьерская доставка по Москве в пределах МКАД (400 &#8381;)</span></li>
+                  <li class="order-confirm__data-option"><span class="order-confirm__data-caption">Способ оплаты:</span><span class="order-confirm__data-value">Онлайн оплата картой Visa или MasterCard</span></li>
+                </ul>
+              </div>
+              <div class="order-confirm__products-composition"> <span class="order-confirm__products-caption">Состав заказа:</span>
+                <div class="order-confirm__products">
+                  <ul class="selected-products selected-products--scrolled">
+                    <li class="selected-products__item">
+                      <div class="selected-products__image-wrap"><a class="selected-products__image" href="card.html"><img src="./images/cart-product-1.jpg" alt="купальник"/></a></div>
+                      <div class="selected-products__content">
+                        <div class="selected-products__brand">Luli Fama</div>
+                        <div class="selected-products__category">Купальник</div>
+                        <div class="selected-products__size multiple-size">
+                          <div class="selected-products__size-top">Верх: <span>44 - 46  |  XXL</span>,</div>
+                          <div class="selected-products__size-bottom">Низ: <span>42  |  L</span></div>
+                        </div>
+                        <div class="selected-products__color">Цвет: <span>Золотисто-розовый хамелеон</span></div>
+                        <div class="selected-products__count">Количество: <span>1</span></div>
+                        <div class="selected-products__price block-price">
+                          <div class="block-price__sales">925 400 &#8381;</div>
+                          <div class="block-price__old">27 000 &#8381;</div>
+                          <div class="block-price__discount">-32%</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="selected-products__item">
+                      <div class="selected-products__image-wrap"><a class="selected-products__image" href="card.html"><img src="./images/cart-product-2.jpg" alt="купальник"/></a></div>
+                      <div class="selected-products__content">
+                        <div class="selected-products__brand">Beach Bunny</div>
+                        <div class="selected-products__category">Лиф</div>
+                        <div class="selected-products__size single-size">
+                          <div class="selected-products__size-single">Размер: <span>42  |  L</span></div>
+                        </div>
+                        <div class="selected-products__color">Цвет: <span>Синий</span></div>
+                        <div class="selected-products__count">Количество: <span>2</span></div>
+                        <div class="selected-products__price block-price">
+                          <div class="block-price__current">9 500 &#8381;</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="selected-products__item">
+                      <div class="selected-products__image-wrap"><a class="selected-products__image" href="card.html"><img src="./images/cart-product-1.jpg" alt="купальник"/></a></div>
+                      <div class="selected-products__content">
+                        <div class="selected-products__brand">Luli Fama</div>
+                        <div class="selected-products__category">Купальник</div>
+                        <div class="selected-products__size multiple-size">
+                          <div class="selected-products__size-top">Верх: <span>44 - 46  |  XXL</span>,</div>
+                          <div class="selected-products__size-bottom">Низ: <span>42  |  L</span></div>
+                        </div>
+                        <div class="selected-products__color">Цвет: <span>Золотисто-розовый хамелеон</span></div>
+                        <div class="selected-products__count">Количество: <span>1</span></div>
+                        <div class="selected-products__price block-price">
+                          <div class="block-price__sales">925 400 &#8381;</div>
+                          <div class="block-price__old">27 000 &#8381;</div>
+                          <div class="block-price__discount">-32%</div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="order-confirm__total-block total-block clearfix">
+                <textarea class="total-block__order-comment form-control form-control--grey" name="comment" placeholder="Комментарий к заказу"></textarea>
+                <div class="total-block__price">Стоимость товаров: <span>1 000 800 &#8381;</span></div>
+                <div class="total-block__discount">Скидка: <span>-25 000 &#8381;</span></div>
+                <div class="total-block__delivery">Доставка: <span>450 &#8381;</span></div>
+                <div class="total-block__delimer"></div>
+                <div class="total-block__total-price">Итого: <span>976 800 &#8381;</span></div>
+                <div class="total-block__checkbox-group">
+                  <div class="total-block__subscribe">
+                    <input class="total-block__checkbox" type="checkbox" name="subscribe" id="ordening-subscribe"/>
+                    <label for="ordening-subscribe">Подписаться на рассылку</label>
+                  </div>
+                  <div class="total-block__agree-offer">
+                    <input class="total-block__checkbox" type="checkbox" name="agree-offer" id="ordening-agree-offer"/>
+                    <label for="ordening-agree-offer">Согласен с условиями Оферты</label>
+                  </div>
+                </div>
+                <button class="button-form" type="submit">Оформить заказ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

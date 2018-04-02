@@ -1,0 +1,786 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <!-- Seo info-->
+    <title>Template</title>
+    <meta name="description" content="Developed by YoungDevelopers team"/>
+    <!-- Styles-->
+    <link rel="stylesheet" href="css/main.css"/>
+    <!-- Favicons-->
+    <meta property="og:image" content="path/to/image.jpg"/>
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png"/>
+    <!-- Browsers Colorbar-->
+    <meta name="theme-color" content="#000"/>
+    <meta name="msapplication-navbutton-color" content="#000"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000"/>
+    <!-- js-->
+    <script src="js/libs.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx6AzWFIJkW0zg4M_GBUZawf_xs4NzNpw&amp;callback=initMap" async="async"></script>
+  </head>
+  <body>
+    <div class="overlay"></div><!-- HEADER -->
+    <header class="site-header">
+      <div class="site-header__top">
+        <div class="container">
+          <button class="mobile-nav-btn js-top-nav-open"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+          <button class="js-trigger-site-search-open mobile-visible" type="button"></button>
+          <div class="header-contact">
+            <div class="header-contact__tel"><a class="contact-tel" href="tel:+84956450970">8 (495) 645-09-70</a><a class="contact-tel" href="tel:+88002505399">8-800-250-53-99</a></div>
+            <div class="header-contact__city"><span class="header-contact__town header-contact__town--underline js-trigger-town-open">г. Москва</span><span class="header-contact__street">Ветошный переулок, д. 9</span></div>
+          </div><a class="header-logo" href="index.html"><img src="./images/logo.jpg" alt="логотип"/></a>
+          <div class="header-actions">
+            <div class="header-actions__item header-login"><a class="header-login__link" href="cabinet-profile.html"><span class="header-login__username">Александра</span></a></div>
+            <div class="header-actions__item header-favorite"><a class="header-favorite__link" href="favorite.html"></a></div>
+            <div class="header-actions__item header-cart"><a class="header-cart__link" href="cart.html"></a></div>
+          </div>
+        </div>
+        <div class="live-town clearfix" style="display:none;">
+          <div class="container relative">
+            <div class="live-town__current">Ваш город: <span class="header-contact__town">Александровск-Сахалинский</span></div>
+            <form class="live-town__search" action="" id="search-town">
+              <input class="live-town__search-control" type="text" name="text" placeholder="Поиск города" id="town-search"/>
+              <button class="button-form" type="submit">ок</button>
+              <button class="live-town__close js-trigger-town-close" type="button"></button>
+            </form>
+          </div>
+        </div>
+        <div class="header__site-search">
+          <div class="container">
+            <form class="site-search" action="" id="site-search">
+              <div class="site-search__controls">
+                <input class="site-search__entry-field" type="text" name="text" placeholder="Поиск"/>
+                <button class="js-trigger-site-search-close" type="button"></button>
+              </div>
+              <div class="site-search__result"><span class="site-search__result-category">бренд</span>
+                <ul class="site-search__result-list">
+                  <li><a href="https://mixbikini.ru/">Beach Bunny</a></li>
+                  <li><a href="https://mixbikini.ru/">Beach Riot</a></li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="main-nav">
+        <div class="main-nav__login header-login clearfix"><a class="header-login__link"><span class="header-login__username">Александра</span></a>
+          <button class="js-top-nav-close" type="button"></button>
+        </div>
+        <div class="main-nav__city clearfix"><span class="header-contact__town header-contact__town--underline js-trigger-town-open">г. Москва</span></div>
+        <div class="container">
+          <ul class="main-nav__menu">
+            <li class="main-nav__item main-nav__item--green"><a class="main-nav__link" href="catalog.html">sale</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">новинки</a></li>
+            <li class="main-nav__item main-nav__item--subnav"><a class="main-nav__link main-nav__link--subnav" href="catalog.html">купальники</a>
+              <button class="js-main-nav-subnav-trigger" type="submit"></button>
+              <div class="main-nav__subnav clearfix">
+                <div class="main-nav__categories">
+                  <h3>Категории</h3>
+                  <ul class="main-nav__categories-list">
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-separate-swimsuits.png" alt="раздельные купальники"/></a></span><a href="catalog.html">Раздельные купальники</a></li>
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-swimsuits.png" alt="слитные купальники"/></a></span><a href="javascript:void(0);">Слитные купальники</a></li>
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-bra.png" alt="лифы"/></a></span><a href="catalog.html">Лифы</a></li>
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-smelting.png" alt="плавки"/></a></span><a href="catalog.html">Плавки</a></li>
+                    <li class="main-nav__categories-item"><span class="main-nav__categories-tumbnail"><a href="catalog.html"><img src="./images/icons/icon-hit-sales.png" alt="хиты продаж"/></a></span><a href="catalog.html">Хиты продаж</a></li>
+                  </ul>
+                </div>
+                <div class="main-nav__brands clearfix">
+                  <h3>Бренды</h3>
+                  <ul class="main-nav__brands-list">
+                    <li class="main-nav__brands-item"><a href="catalog.html">Beach Bunny</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Agua Bendita</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Luli Fama</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Empire of Summer</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Maaji</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Tany &amp; Anny</a></li>
+                    <li class="main-nav__brands-item"><a href="catalog.html">Victoria’s</a></li>
+                    <li class="main-nav__brands-item"><a href="brands.html">Все бренды</a></li>
+                  </ul><img class="main-nav__brands-banner" src="./images/brands-banner.jpg" alt="известные бренды"/>
+                </div>
+                <div class="main-nav__sizes">
+                  <h3>Размеры</h3>
+                  <ul class="main-nav__sizes-list">
+                    <li class="main-nav__sizes-item"><a href="catalog.html">xs</a></li>
+                    <li class="main-nav__sizes-item"><a href="catalog.html">s</a></li>
+                    <li class="main-nav__sizes-item"><a href="catalog.html">m</a></li>
+                    <li class="main-nav__sizes-item"><a href="catalog.html">l</a></li>
+                    <li class="main-nav__sizes-item"><a href="catalog.html">xl</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">одежда и аксессуары</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="sertificate.html">подарочные карты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="reviews.html">отзывы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="contacts.html">контакты</a></li>
+            <li class="main-nav__item">
+              <button class="js-trigger-site-search-open" type="button"></button>
+            </li>
+          </ul>
+          <div class="main-nav__tel"><a class="contact-tel" href="tel:+84956450970">8 (495) 645-09-70</a><a class="contact-tel" href="tel:+88002505399">8-800-250-53-99</a></div>
+        </div>
+      </div>
+    </header><!-- /HEADER -->
+    <section class="top-section breadcrumb-wrap">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="brands.html">Бренды</a></li>
+          <li>Agent Provocateur</li>
+        </ul>
+      </div>
+    </section>
+    <section class="about-brand">
+      <div class="container">
+        <h2>Agent Provocateur</h2>
+        <div class="about-brand__banner"><img src="./images/brand-agent-provocateur.jpg" alt="Agent-Provocateur"/></div>
+        <div class="about-brand__content static-content">
+          <p>Купальники известного американского бренда Beach Bunny можно увидеть на страницах последних номеров глянцевых журналов. Именно они диктуют пляжную моду и пользуются сумасшедшей популярностью у женщин, которые желают выглядеть неотразимо. И это вполне объяснимо, поскольку разнообразие моделей позволит подобрать купальник любого стиля и на любую фигуру. В дизайнерском купальнике Beach Bunny вы будете соответствовать философии респектабельного отеля, где все должно быть дорого и шикарно. Чтобы стать счастливой обладательницей брендовой вещи, совсем необязательно утомлять себя походами по бутикам.</p>
+          <button class="collapse-text about-brand__text-collapse off">Подробнее о бренде</button>
+        </div>
+        <div class="about-brand__more-content static-content"><h3>Купить купальники Beach Bunny для роскошного отдыха</h3>
+          <p>Готовитесь к роскошному отдыху в дорогом отеле с лазурным бассейном? Тогда вам просто необходимо купить купальник Beach Bunny. Он выгодно подчеркнет красоту, по-настоящему преобразит и сделает яркой даже самую обычную внешность. Чтобы стать счастливой обладательницей брендовой вещи, совсем необязательно утомлять себя походами по бутикам. Быстро и без переплат можно купить купальники Бич Бани в интернет-магазине МixBikini.</p><h3>Где купить купальник Beach Bunny?</h3>
+          <p>Чтобы купить BeachBunny в Москве – воспользуйтесь предложением интернет магазина Мixbikini. В нашем иллюстрированном каталоге можно выбрать и приобрести недорого купальник Beach Bunny из роскошной новой коллекции – элегантный слитный с пикантным кружевом или раздельный с любым типом чашечки и трусиков.</p>
+          <p>Все модели BeachBunny изготовлены из качественной быстросохнущей ткани и представлены в самых модных оттенках сезона. Здесь можно выбрать лимитированный вариант с аксессуарами, шикарный кружевной купальник, и любую другую модель, в которой выбудете отдыхать роскошно и с настоящим удовольствием.</p>
+          <button class="about-brand__collapse-detail">Скрыть информацию</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="catalog">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-2 catalog__head">
+              <div class="catalog__head-left">
+                <h1>Agent Provocateur</h1><span class="catalog__amount-product">1 324 322 <span>позиций</span></span>
+              </div>
+              <div class="catalog__head-right">
+                <button class="js-catalog-filter-open" type="button"></button>
+                <form class="catalog__sort" action="">
+                  <select class="catalog__sort-select" name="sort">
+                    <option value="">Сортировать по</option>
+                    <option value="">Цена по убыванию</option>
+                    <option value="">Цена по возрастанию</option>
+                    <option value="">Сначала новые</option>
+                    <option value="">Хиты продаж</option>
+                    <option value="">По скидкам</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <aside class="col-md-2">
+              <div class="catalog-filter">
+                <div class="catalog-filter__mobile-head"><span>Фильтр</span>
+                  <button class="js-catalog-filter-close" type="button"></button>
+                </div>
+                <div class="menu-group">
+                  <div class="menu-group__title-wrap">
+                    <h3 class="menu-group__title">Раздел</h3>
+                    <button class="js-catalog-filter-block-trigger" type="button"></button>
+                  </div>
+                  <ul class="menu-group__list">
+                    <li class="menu-group__item"><a href="javascript:void(0);">Новинки</a></li>
+                    <li class="menu-group__item"><a href="javascript:void(0);">Sale</a></li>
+                    <li class="menu-group__item"><a href="javascript:void(0);">Аксессуары</a></li>
+                  </ul>
+                </div>
+                <form id="catalog-filter" action="">
+                  <div class="catalog-filter__title-wrap">
+                    <h3 class="catalog-filter__title">тип</h3>
+                    <button class="js-catalog-filter-block-trigger" type="button"></button>
+                  </div>
+                  <div class="catalog-filter__block">
+                    <button class="catalog-filter__reset" type="button">Сбросить</button>
+                    <div class="catalog-filter__option">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="type-1" id="type-1"/>
+                      <label for="type-1">Раздельные</label>
+                    </div>
+                    <div class="catalog-filter__option">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="type-2" id="type-2"/>
+                      <label for="type-2">Слитные</label>
+                    </div>
+                    <div class="catalog-filter__option">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="type-3" id="type-3"/>
+                      <label for="type-3">Лиф</label>
+                    </div>
+                    <div class="catalog-filter__option">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="type-4" id="type-4"/>
+                      <label for="type-4">Плавки</label>
+                    </div>
+                    <div class="catalog-filter__option">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="type-5" id="type-5"/>
+                      <label for="type-5">Туники</label>
+                    </div>
+                  </div>
+                  <div class="catalog-filter__title-wrap">
+                    <h3 class="catalog-filter__title">бренд</h3>
+                    <button class="js-catalog-filter-block-trigger" type="button"></button>
+                  </div>
+                  <div class="catalog-filter__block">
+                    <button class="catalog-filter__reset" type="button">Сбросить</button>
+                    <div class="catalog-filter__option">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="brand-1" id="brand-1"/>
+                      <label for="brand-1">Beach Bunny</label>
+                    </div>
+                    <div class="catalog-filter__option">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="brand-2" id="brand-2"/>
+                      <label for="brand-2">Agua Bendita</label>
+                    </div>
+                    <div class="catalog-filter__option">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="brand-3" id="brand-3"/>
+                      <label for="brand-3">Luli Fama</label>
+                    </div>
+                    <div class="catalog-filter__option">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="brand-4" id="brand-4"/>
+                      <label for="brand-4">Empire of Summer</label>
+                    </div>
+                    <div class="catalog-filter__option">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="brand-5" id="brand-5"/>
+                      <label for="brand-5">Maaji</label>
+                    </div>
+                    <div class="catalog-filter__option">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="brand-6" id="brand-6"/>
+                      <label for="brand-6">Tany&amp;Anny</label>
+                    </div>
+                    <div class="catalog-filter__option">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="brand-7" id="brand-7"/>
+                      <label for="brand-7">Victoria's</label>
+                    </div>
+                    <div class="catalog-filter__option">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="brand-8" id="brand-8"/>
+                      <label for="brand-8">Vitamin A</label>
+                    </div>
+                  </div>
+                  <div class="catalog-filter__title-wrap">
+                    <h3 class="catalog-filter__title">цвет</h3>
+                    <button class="js-catalog-filter-block-trigger" type="button"></button>
+                  </div>
+                  <div class="catalog-filter__block">
+                    <button class="catalog-filter__reset" type="button">Сбросить</button>
+                    <div class="catalog-filter__scrolled-block">
+                      <div class="catalog-filter__option">
+                        <input class="catalog-filter__checkbox" type="checkbox" name="color-1" id="color-1"/>
+                        <label for="color-1">Красный</label>
+                      </div>
+                      <div class="catalog-filter__option">
+                        <input class="catalog-filter__checkbox" type="checkbox" name="color-2" id="color-2"/>
+                        <label for="color-2">Зелёный</label>
+                      </div>
+                      <div class="catalog-filter__option">
+                        <input class="catalog-filter__checkbox" type="checkbox" name="color-3" id="color-3"/>
+                        <label for="color-3">Белый</label>
+                      </div>
+                      <div class="catalog-filter__option">
+                        <input class="catalog-filter__checkbox" type="checkbox" name="color-4" id="color-4"/>
+                        <label for="color-4">Чёрный</label>
+                      </div>
+                      <div class="catalog-filter__option">
+                        <input class="catalog-filter__checkbox" type="checkbox" name="color-5" id="color-5"/>
+                        <label for="color-5">Синий</label>
+                      </div>
+                      <div class="catalog-filter__option">
+                        <input class="catalog-filter__checkbox" type="checkbox" name="color-6" id="color-6"/>
+                        <label for="color-6">Бордовый</label>
+                      </div>
+                      <div class="catalog-filter__option">
+                        <input class="catalog-filter__checkbox" type="checkbox" name="color-7" id="color-7"/>
+                        <label for="color-7">Желтый</label>
+                      </div>
+                      <div class="catalog-filter__option">
+                        <input class="catalog-filter__checkbox" type="checkbox" name="color-8" id="color-8"/>
+                        <label for="color-8">Хаки</label>
+                      </div>
+                      <div class="catalog-filter__option">
+                        <input class="catalog-filter__checkbox" type="checkbox" name="color-9" id="color-9"/>
+                        <label for="color-9">Оранжевый</label>
+                      </div>
+                      <div class="catalog-filter__option">
+                        <input class="catalog-filter__checkbox" type="checkbox" name="color-10" id="color-10"/>
+                        <label for="color-10">Фиолетовый</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-filter__title-wrap">
+                    <h3 class="catalog-filter__title">размер</h3>
+                    <button class="js-catalog-filter-block-trigger" type="button"></button>
+                  </div>
+                  <div class="catalog-filter__block">
+                    <button class="catalog-filter__reset" type="button">Сбросить</button>
+                    <div class="catalog-filter__option catalog-filter__option--sizes">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="size-1" id="size-1"/>
+                      <label for="size-1">xs</label>
+                    </div>
+                    <div class="catalog-filter__option catalog-filter__option--sizes">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="size-2" id="size-2"/>
+                      <label for="size-2">s</label>
+                    </div>
+                    <div class="catalog-filter__option catalog-filter__option--sizes">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="size-3" id="size-3"/>
+                      <label for="size-3">m</label>
+                    </div>
+                    <div class="catalog-filter__option catalog-filter__option--sizes">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="size-4" id="size-4"/>
+                      <label for="size-4">l</label>
+                    </div>
+                    <div class="catalog-filter__option catalog-filter__option--sizes">
+                      <input class="catalog-filter__checkbox" type="checkbox" name="size-5" id="size-5"/>
+                      <label for="size-5">xl</label>
+                    </div>
+                    <div class="catalog-filter__sizes-table"><a href="javascript:void(0);">Таблица размеров</a></div>
+                  </div>
+                </form>
+              </div>
+            </aside>
+            <div class="col-md-10">
+              <div class="catalog__list">
+                <div class="catalog__item">
+                  <div class="product product--new"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-1.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-2.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span><span class="product__group product__group--new">новый сезон</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product product--hits"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-2.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-3.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view-single-size" href="#fast-view-single-size">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Empire of Summer</a><span class="product__category">Плавки</span><span class="product__price">500 900 &#8381;</span><span class="product__group product__group--hits">хит продаж</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product product--sales"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-3.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-4.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Empire of Summer</a><span class="product__category">Купальник</span><span class="product__price product__price--sales">15 500 &#8381;</span><span class="product__old-price">20 000 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-1.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-2.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view-single-size" href="#fast-view-single-size">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-2.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-3.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-3.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-4.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view-single-size" href="#fast-view-single-size">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-1.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-2.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-2.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-3.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-3.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-4.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-1.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-2.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-2.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-3.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-3.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-4.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-1.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-2.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-2.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-3.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-3.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-4.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-1.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-2.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-2.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-3.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-3.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-4.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-1.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-2.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-2.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-3.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-3.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-4.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-1.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-2.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-2.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-3.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-3.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-4.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-1.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-2.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-2.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-3.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-3.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-4.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-1.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-2.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-2.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-3.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="product"><a class="product__images-wrap" href="card.html"><img class="product__images-first" src="./images/catalog-product-3.jpg" alt="купальник"/><img class="product__images-last" src="./images/catalog-product-4.jpg" alt="купальник"/></a>
+                    <div class="product__fast-view"><a class="to-modal-fast-view" href="#fast-view">Быстрый просмотр</a></div>
+                    <div class="product__info"><a class="product__brand" href="card.html">Luli Fama</a><span class="product__category">Купальник</span><span class="product__price">500 900 &#8381;</span></div>
+                  </div>
+                </div>
+              </div>
+              <button class="catalog__load-more button" type="button">загрузить еще</button>
+              <ul class="pagination">
+                <li class="prev"><a href="javascript:void(0);"><img src="./images/icons/icon-arrow-left.svg" alt="предыдущий"/></a></li>
+                <li class="active"><a href="javascript:void(0);">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="javascript:void(0);">3</a></li>
+                <li><a href="javascript:void(0);">4</a></li>
+                <li><a href="#javascript:void(0);">5</a></li>
+                <li><a href="javascript:void(0);">6</a></li>
+                <li><a href="javascript:void(0);">7</a></li>
+                <li class="next"><a href="javascript:void(0);"><img src="./images/icons/icon-arrow-right.svg" alt="следующий"/></a></li>
+              </ul>
+              <div class="catalog__text">
+                <div class="catalog__text-content static-content"><p style="text-align: left;">Туника – это разновидность длиной и свободной рубашки. За счёт своей свободной посадки она хорошо скрывает бёдра и отлично подходит не только стройным, но и пышным фигурам.<br>Ищите изысканную и комфортную&nbsp;<a href="https://mixbikini.ru/catalog/clothing/">пляжную женскую&nbsp;одежду</a>? Тогда обратите свое внимание на модные летние туники для пляжа, представленные в нашем интернет-магазине.<br>В нашем каталоге вы найдете все для того, чтобы оставаться на вершине моды. <br>В нашем каталоге представлены:</p>
+<p style="text-align: left;"></p>
+<ul style="text-align: left;">
+<li>красивые летние туники с длинными и короткими рукавами;</li>
+<li>туники-блузки;</li>
+<li>туники-рубашки;</li>
+<li>туники-платья;</li>
+<li>туника-сетка и другие модели.</li>
+</ul>
+<p></p>
+<p style="text-align: left;">Отдел закупок MixBikini работает напрямую с производителями. &nbsp;Реализуемая продукция имеет качественный крой, хорошо смотрится на женской фигуре, долго сохраняет свою структуру и не выцветает под действием ультрафиолета.</p>
+<p style="text-align: left;"></p>
+<h3 align="center" style="text-align: left;">Как выбрать и купить летнюю тунику по выгодной цене?</h3>
+<p style="text-align: left;"></p>
+<p style="text-align: left;">Давайте рассмотрим наиболее распространенные советы по выбору одежды для распространенных типов женской фигуры.<br>Для фигуры «песочные часы» целесообразно выбирать туники с V-образным вырезом. Женские летние туники такого фасона отлично подчеркивают достоинства такой фигуры – узкие бедра, пышную грудь и в меру широкие плечи.<br>Девушкам с пышной фигурой подходят длинные и свободные туники. Такой фасон отлично скрывает животик. Подбирая пляжную тунику в пол, убедитесь в том, что у нее нет вышивки или карманов на поясе. Карманы на поясе слегка сужают тунику в области талии. Декоративные же элементы концентрируют внимание на себе, что нежелательно для девушек с животиком.<br>Женщинам с массивными бедрами хорошо подходят длинные туники с асимметричными низом и декоративными элементами в области плеча. Это могут быть различные рюши, бахрома или бретельки разных форм и дизайна.<br>Девушкам с широкой талией необходимо выбирать яркие туники с украшениями и декоративными элементами. Их наличие поможет отвлечь внимание от недостатков фигуры.
+</p>
+<p style="text-align: left;"></p>
+<h3 align="center" style="text-align: left;">Как носить модную летнюю тунику для пляжа?</h3>
+<p style="text-align: left;"></p>
+<p style="text-align: left;">Поскольку туники имеют разный покрой, фасон и дизайн, то их можно носить разными способами. Независимо от типа фигуры, длинные и легкие летние туники – это лучший выбор для тех, кто не хочет думать о выборе дополнительных аксессуаров: шляп, босоножек, сумочек и т.д. Легкие туники длинного покроя хорошо носятся с леггинсами, брюками, джинсами и колготками. Однако они совершенно не сочетаются с рюкзаками и другими спортивными аксессуарами. <br>Что же касается мира высокой моды, специалисты рекомендуют носить пляжные туники с купальниками. Оптимальным вариантом в этом случае будет туника-сетка белого, матового или светло-синих оттенков и яркий купальник, например, красного, розового или оранжевого цвета. Однотонные туники и цветные смотрятся по-разному на взрослых и молодых дамах. Например, юным девочкам лучше купить летнюю тунику с цветочными принтами. Женщинам от 35 лет внимание лучше обратить внимание на однотонные туники классического покроя. Однако это не означает, что на взрослой женщине туника с яркими принтами будет плохо смотреться.
+</p>
+<p style="text-align: left;"></p>
+<h3 align="center" style="text-align: left;">Почему лучше купить пляжные туники в интернет-магазине?</h3>
+<p style="text-align: left;"></p>
+<p style="text-align: left;"></p>
+<p style="text-align: left;"></p>
+<p style="text-align: left;">В интернет-магазине MixBikini вы можете купить пляжные туники от&nbsp;известных мировых брендов и на выгодных условиях:</p>
+<p style="text-align: left;"></p>
+<ul style="text-align: left;">
+<li>при покупке товара онлайн или в магазине на сумму более 20 000 рублей мы дарим бесплатную доставку по Москве. Отметим, доставка у нас работает не только по Москве, но и по миру;</li>
+<li>в нашем бутике вы можете посмотреть, примерить и недорого купить пляжные туники. Мы будем рады вас видеть ежедневно с 11:00 до 20:00 по местному времени;</li>
+<li>при оформлении заказа на сайте до 16:00 доставка по Москве осуществляется в тот же день.</li>
+</ul>
+<p></p>
+<p style="text-align: left;"></p>
+<p style="text-align: left;"></p>
+<p style="text-align: left;">Ассортимент нашего интернет-магазина регулярно расширяется новыми моделями пляжных туник. Отметим, мы не гонимся за количеством товара, а предпочитаем выставлять на виртуальные полочки нашего магазина только качественную продукцию. <br>В нашем интернет-магазине вы можете купить летние туники, которые на 100% соответствуют современным модными тенденциям.</p>
+<p></p>
+<p></p>
+<p></p>
+                </div>
+              </div>
+              <button class="collapse-text catalog__text-collapse off">Показать полностью</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="hidden">
+      <div class="modal-box fast-view clearfix" id="fast-view">
+        <form action="" id="fast-view-form">
+          <div class="fast-view__head">
+            <div class="fast-view__product-group fast-view__product-group--new">новый сезон</div>
+            <div class="fast-view__brand">beach bunny</div>
+            <div class="fast-view__name">Купальник Beach Bunny Hard Summer</div>
+          </div>
+          <div class="fast-view__images-gallery">
+            <div class="product-gallery clearfix">
+              <ul class="product-gallery__slider">
+                <li class="product-gallery__slider-item"><img src="./images/catalog-product-7.jpg" alt="купальник"/></li>
+                <li class="product-gallery__slider-item"><img src="./images/catalog-product-2.jpg" alt="купальник"/></li>
+                <li class="product-gallery__slider-item"><img src="./images/catalog-product-3.jpg" alt="купальник"/></li>
+                <li class="product-gallery__slider-item"><img src="./images/catalog-product-6.jpg" alt="купальник"/></li>
+              </ul>
+              <ul class="product-gallery__slider-nav clearfix">
+                <li class="product-gallery__slider-nav-item"><img src="./images/catalog-product-7.jpg" alt="купальник"/></li>
+                <li class="product-gallery__slider-nav-item"><img src="./images/catalog-product-2.jpg" alt="купальник"/></li>
+                <li class="product-gallery__slider-nav-item"><img src="./images/catalog-product-3.jpg" alt="купальник"/></li>
+                <li class="product-gallery__slider-nav-item"><img src="./images/catalog-product-6.jpg" alt="купальник"/></li>
+              </ul>
+            </div>
+          </div>
+          <div class="fast-view__content">
+            <div class="fast-view__price">35 000 &#8381;</div>
+            <div class="fast-view__old-price">37 000 &#8381;</div>
+            <div class="fast-view__discount">(-32%)</div>
+            <div class="fast-view__color">Цвет: Голубой</div>
+            <div class="fast-view__sizes multiple-size clearfix">
+              <div class="row">
+                <div class="fast-view__sizes-column">
+                  <select class="sort-size__top" name="top_size" required="required">
+                    <option value="">Размер верха</option>
+                    <option class="disabled" value="">RU 40  |  XS  -  нет в наличии</option>
+                    <option value="1">RU 42  |  S</option>
+                    <option class="disabled" value="">RU 44-46  |  XXL  -  нет в наличии</option>
+                  </select><span class="forgot-choose-size" id="top-size-error"></span>
+                </div>
+                <div class="fast-view__sizes-column">
+                  <select class="sort-size__bottom" name="bottom_size" required="required">
+                    <option value="">Размер низа</option>
+                    <option class="disabled" value="">RU 40  |  XS  -  нет в наличии</option>
+                    <option value="1">RU 42  |  S</option>
+                    <option class="disabled" value="">RU 44-46  |  XXL  -  нет в наличии</option>
+                  </select><span class="forgot-choose-size" id="bottom-size-error"></span><a class="fast-view__table-sizes to-modal-table-sizes" href="#table-sizes">Таблица размеров</a>
+                </div>
+              </div>
+            </div>
+            <button class="fast-view__add-cart button-form" type="submit">Добавить в корзину</button>
+            <button class="fast-view__add-favorite" type="button"></button>
+            <div class="fast-view__description">
+              <p>Любители классических раздельных купальников оценят изысканное сочетание серых оттенков, создающий стильный графичный образ. Лиф на регулируемых бретелях прекрасно поддерживает грудь и создает соблазнительную ложбинку, а трендовый дизайн с треугольниками на чашечках неизбежно привлекает восхищенные взгляды.</p>
+            </div><a class="fast-view__all-details" href="card.html">Все детали</a>
+          </div>
+        </form>
+      </div>
+      <div class="modal-box fast-view clearfix" id="fast-view-single-size">
+        <form action="" id="fast-view-form-2">
+          <div class="fast-view__head">
+            <div class="fast-view__product-group fast-view__product-group--new">новый сезон</div>
+            <div class="fast-view__brand">beach bunny</div>
+            <div class="fast-view__name">Купальник Beach Bunny Hard Summer</div>
+          </div>
+          <div class="fast-view__images-gallery">
+            <div class="product-gallery clearfix">
+              <ul class="product-gallery__slider">
+                <li class="product-gallery__slider-item"><img src="./images/catalog-product-7.jpg" alt="купальник"/></li>
+                <li class="product-gallery__slider-item"><img src="./images/catalog-product-2.jpg" alt="купальник"/></li>
+                <li class="product-gallery__slider-item"><img src="./images/catalog-product-3.jpg" alt="купальник"/></li>
+                <li class="product-gallery__slider-item"><img src="./images/catalog-product-6.jpg" alt="купальник"/></li>
+              </ul>
+              <ul class="product-gallery__slider-nav clearfix">
+                <li class="product-gallery__slider-nav-item"><img src="./images/catalog-product-7.jpg" alt="купальник"/></li>
+                <li class="product-gallery__slider-nav-item"><img src="./images/catalog-product-2.jpg" alt="купальник"/></li>
+                <li class="product-gallery__slider-nav-item"><img src="./images/catalog-product-3.jpg" alt="купальник"/></li>
+                <li class="product-gallery__slider-nav-item"><img src="./images/catalog-product-6.jpg" alt="купальник"/></li>
+              </ul>
+            </div>
+          </div>
+          <div class="fast-view__content">
+            <div class="fast-view__price">35 000 &#8381;</div>
+            <div class="fast-view__old-price">37 000 &#8381;</div>
+            <div class="fast-view__discount">(-32%)</div>
+            <div class="fast-view__color">Цвет: Голубой</div>
+            <div class="fast-view__sizes single-size clearfix">
+              <div class="row">
+                <div class="fast-view__sizes-column">
+                  <select class="sort-size__single">
+                    <option>Размер</option>
+                    <option class="disabled" value="">RU 40  |  XS  -  нет в наличии</option>
+                    <option value="">RU 42  |  S</option>
+                    <option class="disabled" value="">RU 44-46  |  XXL  -  нет в наличии</option>
+                  </select><span class="forgot-choose-size">Пожалуйста, выберите размер</span>
+                </div>
+                <div class="fast-view__sizes-column"><a class="fast-view__table-sizes to-modal-table-sizes" href="#table-sizes">Таблица размеров</a></div>
+              </div>
+            </div>
+            <button class="fast-view__add-cart button-form" type="button">Добавить в корзину</button>
+            <button class="fast-view__add-favorite" type="button"></button>
+            <div class="fast-view__description">
+              <p>Любители классических раздельных купальников оценят изысканное сочетание серых оттенков, создающий стильный графичный образ. Лиф на регулируемых бретелях прекрасно поддерживает грудь и создает соблазнительную ложбинку, а трендовый дизайн с треугольниками на чашечках неизбежно привлекает восхищенные взгляды.</p>
+            </div><a class="fast-view__all-details" href="card.html">Все детали</a>
+          </div>
+        </form>
+      </div>
+      <div class="modal-box table-sizes" id="table-sizes">
+        <div class="table-sizes__title">Размеры нижнего белья</div>
+        <h3>Российский размер</h3>
+        <ul class="table-sizes__russian">
+          <li class="table-sizes__russian-item active">38</li>
+          <li class="table-sizes__russian-item">40</li>
+          <li class="table-sizes__russian-item">42</li>
+          <li class="table-sizes__russian-item">44</li>
+          <li class="table-sizes__russian-item">46</li>
+          <li class="table-sizes__russian-item">48</li>
+          <li class="table-sizes__russian-item">50</li>
+          <li class="table-sizes__russian-item">52</li>
+          <li class="table-sizes__russian-item">54</li>
+          <li class="table-sizes__russian-item">56</li>
+          <li class="table-sizes__russian-item">58</li>
+        </ul>
+        <h3>Таблица соответствия размеров</h3>
+        <ul class="table-sizes__conformity clearfix">
+          <li class="table-sizes__conformity-item clearfix"><span class="table-sizes__conformity-option">Международные <span>(INT)</span></span><span class="table-sizes__conformity-value">XXS</span></li>
+          <li class="table-sizes__conformity-item clearfix"><span class="table-sizes__conformity-option">Англия <span>(UK)</span></span><span class="table-sizes__conformity-value">4</span></li>
+          <li class="table-sizes__conformity-item clearfix"><span class="table-sizes__conformity-option">Италия <span>(IT)</span></span><span class="table-sizes__conformity-value">36</span></li>
+          <li class="table-sizes__conformity-item clearfix"><span class="table-sizes__conformity-option">США <span>(US)</span></span><span class="table-sizes__conformity-value">0</span></li>
+          <li class="table-sizes__conformity-item clearfix"><span class="table-sizes__conformity-option">Германия <span>(GE)</span></span><span class="table-sizes__conformity-value">30</span></li>
+          <li class="table-sizes__conformity-item clearfix"><span class="table-sizes__conformity-option">Джинсы</span><span class="table-sizes__conformity-value">24</span></li>
+          <li class="table-sizes__conformity-item clearfix"><span class="table-sizes__conformity-option">Франция <span>(FR)</span></span><span class="table-sizes__conformity-value">32</span></li>
+        </ul>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__top">
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <h4 class="site-footer__according-heading">о магазине</h4>
+              <ul class="site-footer__menu">
+                <li class="site-footer__item"><a href="404.html">Компания</a></li>
+                <li class="site-footer__item"><a href="contacts.html">Контакты</a></li>
+                <li class="site-footer__item"><a href="reviews.html">Отзывы</a></li>
+                <li class="site-footer__item"><a href="404.html">Условия продажи</a></li>
+                <li class="site-footer__item"><a href="articles.html">Статьи</a></li>
+                <li class="site-footer__item"><a href="news.html">СМИ о нас</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <h4 class="site-footer__according-heading">покупателям</h4>
+              <ul class="site-footer__menu">
+                <li class="site-footer__item"><a href="javascript:void(0);">Оплата</a></li>
+                <li class="site-footer__item"><a href="javascript:void(0);">Доставка</a></li>
+                <li class="site-footer__item"><a href="javascript:void(0);">Обмен и возврат</a></li>
+                <li class="site-footer__item"><a href="javascript:void(0);">Статус доставки</a></li>
+                <li class="site-footer__item"><a href="javascript:void(0);">Таблица размеров</a></li>
+                <li class="site-footer__item"><a href="sertificate.html">Подарочные карты</a></li>
+                <li class="site-footer__item"><a href="javascript:void(0);">Программа лояльности</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <h4 class="site-footer__according-heading">принимаем к оплате</h4>
+              <div class="site-footer__payment-option"><img src="./images/payment-visa.png" alt="visa"/><img src="./images/payment-master-card.png" alt="master-card"/>
+                <p>Вы также можете оплатить покупки наличными в магазине, или при получении.</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <div class="site-footer__subscribe-wrap">
+                <h4 class="site-footer__according-heading">подписка на новости mixbikini</h4>
+                <form class="site-footer__subscribe" action="" id="footer-subscribe">
+                  <input class="form-control" type="email" name="email" placeholder="E-mail" required="required"/>
+                  <button class="button-form button-form--orange" type="submit">ок</button><span class="subscribe__status-login subscribe__status-login--wrong" id="footer-subscribe-error"></span>
+                </form>
+              </div>
+              <div class="site-footer__social-wrap">
+                <h4>мы в соц.сетях</h4>
+                <ul class="site-footer__social social">
+                  <li class="social__link"><a href="https://instagram.com/mixbikiniru" target="__blank"><img src="./images/icons/instagram.png" alt="instagram"></a></li>
+                  <li class="social__link"><a href="https://www.facebook.com/mixbikiniru" target="__blank"><img src="./images/icons/facebook.png" alt="facebook"></a></li>
+                  <li class="social__link"><a href="https://vk.com/mixbikiniru" target="__blank"><img src="./images/icons/vkontakte.png" alt="vkontakte"></a></li>
+                  <li class="social__link"><a href="https://ok.ru/group/58192199614513" target="__blank"><img src="./images/icons/odnoklasniki.png" alt="odnoklasniki"></a></li>
+                  <li class="social__link"><a href="https://www.youtube.com/user/MixBikini/feed" target="__blank"><img src="./images/icons/youtube.png" alt="youtube"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-to-top">
+        <div class="scroll-to-top__control js-scroll-to-top"></div>
+      </div>
+      <div class="container">
+        <div class="copyright clearfix">
+          <div class="copyright__col-left">© MixBikini, 2017. Все права защищены.</div>
+          <div class="copyright__col-right"><a class="copyright__link" href="javascript:void(0);">Оферта</a><a class="copyright__link" href="javascript:void(0);">Политика конфиденциальности</a></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
