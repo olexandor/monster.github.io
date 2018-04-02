@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Cabinet deposits history</title>
+    <meta name="description" content="Cabinet deposits history"/><meta property="og:image" content="path/to/image.jpg">
+<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css"/><meta name="theme-color" content="#ccc">
+<meta name="msapplication-navbutton-color" content="#ccc">
+<meta name="apple-mobile-web-app-status-bar-style" content="#ccc">
+  </head>
+  <body>
+    <header class="site-header">
+      <button class="js-mobile-menu-trigger" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <div class="container">
+        <div class="site-header__top">
+          <div class="site-header__language language-select">
+            <div class="language-select__item"><a class="language-select__link active" href="javascript:void(0);">Rus</a></div>
+            <div class="language-select__item"><a class="language-select__link" href="javascript:void(0);">Eng</a></div>
+            <div class="language-select__item"><a class="language-select__link" href="javascript:void(0);">Port</a></div>
+            <div class="language-select__item"><a class="language-select__link" href="javascript:void(0);">Span</a></div>
+          </div>
+          <div class="site-header__top-right">
+            <div class="site-header__social social">
+              <div class="social__item"><a class="social__link fb" href="javascript:void(0);"></a></div>
+              <div class="social__item"><a class="social__link vk" href="javascript:void(0);"></a></div>
+            </div><a class="site-header__logout" href="javascript:void(0);">Logout</a><a class="site-header__account" href="cabinet-account.html">Account</a>
+          </div>
+        </div>
+        <div class="site-header__bottom">
+          <div class="site-header__logo"><a class="site-logo" href="index.html"><img src="./img/icons/site-logo.png" alt="GlobalBid"/><span>GlobalBid</span></a></div><a class="site-header__proofs btn btn--small btn--orange" href="latest-payments.html">payment proofs</a>
+          <div class="site-header__nav">
+            <nav class="main-nav"><a class="site-header__logout site-header__logout--mobile" href="javascript:void(0);">Logout</a><a class="site-header__account site-header__account--mobile" href="cabinet-account.html">Account</a>
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link active" href="index.html">home</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="about-us.html">about us</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="FAQ.html">faq</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="news.html">news</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="affiliate-program.html">affiliate program</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="contact-us.html">support</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="page-head page-head--extended">
+      <div class="container">
+        <h1 class="page-title">deposits history</h1>
+        <div class="referral-link"><span data-clipboard-target="#referral-link-head" data-toggle="tooltip" title="" data-original-title="Copied!" data-trigger="manual">Your Referral Link:</span><a id="referral-link-head" href="javascript:void(0);" target="_blank">https://globalbid/?ref=ivanov</a></div>
+      </div>
+    </section>
+    <section class="cabinet">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-3">
+            <div class="cabinet-menu__wrap">
+              <div class="cabinet-menu__dropdown">investor panel menu</div>
+              <ul class="cabinet-menu">
+                <li class="cabinet-menu__item"><a class="cabinet-menu__link active" href="cabinet-account.html">Account Overview</a></li>
+                <li class="cabinet-menu__item"><a class="cabinet-menu__link" href="cabinet-make-deposit.html">make a deposits</a></li>
+                <li class="cabinet-menu__item"><a class="cabinet-menu__link" href="cabinet-your-deposits.html">your deposits</a></li>
+                <li class="cabinet-menu__item"><a class="cabinet-menu__link" href="cabinet-deposits-history.html">deposits history</a></li>
+                <li class="cabinet-menu__item"><a class="cabinet-menu__link" href="cabinet-earnings-history.html">earnings history</a></li>
+                <li class="cabinet-menu__item"><a class="cabinet-menu__link" href="cabinet-withdraw-found.html">withdraw found</a></li>
+                <li class="cabinet-menu__item"><a class="cabinet-menu__link" href="cabinet-withdrawals-history.html">withdrawals history</a></li>
+                <li class="cabinet-menu__item"><a class="cabinet-menu__link" href="cabinet-referrals.html">your referrals</a></li>
+                <li class="cabinet-menu__item"><a class="cabinet-menu__link" href="cabinet-promotion-tools.html">promotion tools</a></li>
+                <li class="cabinet-menu__item"><a class="cabinet-menu__link" href="cabinet-edit-account.html">edit Account</a></li>
+                <li class="cabinet-menu__item"><a class="cabinet-menu__link" href="javascript:void(0);">logout</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-8 col-lg-9">
+            <div class="cabinet-content deposits-history">
+              <div class="deposits-history__datepicker">
+                <form class="datepicker" action="" id="datepicker-deposits-history">
+                  <div class="datepicker__group datepicker__group--from-date">
+                    <div class="datepicker__group-title">From:</div>
+                    <div class="datepicker__group-select">
+                      <select class="custom-select custom-select--month">
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option selected="selected">July</option>
+                        <option>Aug</option>
+                        <option>Sept</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                      </select>
+                      <select class="custom-select custom-select--day">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option selected="selected">12</option>
+                      </select>
+                      <select class="custom-select custom-select--year">
+                        <option>2006</option>
+                        <option>2007</option>
+                        <option>2008</option>
+                        <option>2009</option>
+                        <option>2010</option>
+                        <option>2011</option>
+                        <option>2012</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                        <option selected="selected">2017</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="datepicker__group datepicker__group--to-date">
+                    <div class="datepicker__group-title">To:</div>
+                    <div class="datepicker__group-select">
+                      <select class="custom-select custom-select--month">
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>Apr</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option selected="selected">July</option>
+                        <option>Aug</option>
+                        <option>Sept</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                      </select>
+                      <select class="custom-select custom-select--day">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option selected="selected">10</option>
+                        <option>11</option>
+                        <option>12</option>
+                      </select>
+                      <select class="custom-select custom-select--year">
+                        <option>2006</option>
+                        <option>2007</option>
+                        <option>2008</option>
+                        <option>2009</option>
+                        <option>2010</option>
+                        <option>2011</option>
+                        <option>2012</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                        <option selected="selected">2017</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button class="datepicker__action btn btn--orange btn--small" type="submit">go</button>
+                </form>
+              </div>
+              <div class="deposits-history__table">
+                <table class="info-table info-table--reverse-color">
+                  <thead>
+                    <tr>
+                      <th>Type</th>
+                      <th>Amount</th>
+                      <th>Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10% Daily Forever</td>
+                      <td class="nowrap-cell">&#579; 0.01000000</td>
+                      <td class="nowrap-cell">Jun.5.2017</td>
+                    </tr>
+                    <tr>
+                      <td>15% Daily Forever</td>
+                      <td class="nowrap-cell">&#579; 0.01000000</td>
+                      <td class="nowrap-cell">Jun.5.2017</td>
+                    </tr>
+                    <tr>
+                      <td>12% Daily Forever</td>
+                      <td class="nowrap-cell">&#579; 0.01000000</td>
+                      <td class="nowrap-cell">Jun.5.2017</td>
+                    </tr>
+                    <tr>
+                      <td>10% Daily Forever</td>
+                      <td class="nowrap-cell">&#579; 0.01000000</td>
+                      <td class="nowrap-cell">Jun.5.2017</td>
+                    </tr>
+                    <tr>
+                      <td>15% Daily Forever</td>
+                      <td class="nowrap-cell">&#579; 0.01000000</td>
+                      <td class="nowrap-cell">Jun.5.2017</td>
+                    </tr>
+                    <tr>
+                      <td>15% Daily Forever</td>
+                      <td class="nowrap-cell">&#579; 0.01000000</td>
+                      <td class="nowrap-cell">Jun.5.2017</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="deposits-history__total balance-bitcoin">Total: <span>&#579; 0.00000000</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3"><a class="site-footer__logo site-logo" href="javascript:void(0);"><img src="./img/icons/site-logo.png" alt="GlobalBid"/><span>GlobalBid</span></a>
+            <ul class="site-footer__menu">
+              <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="index.html">Home</a></li>
+              <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="about-us.html">About Us</a></li>
+              <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="FAQ.html">FAQ</a></li>
+              <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="news.html">News</a></li>
+              <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="affiliate-program.html">Affiliate Program</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="site-footer__info">Welcome to the website of BitPalas Limited! If you find yourself here, you are definitely in search of relia ble and profitable investment you are just at the right place since.</div><a class="site-footer__contact site-footer__contact--tel" href="tel:+18005442123">1 (800) 544-2123</a>
+            <div class="site-footer__contact site-footer__contact--location">140 New Str., 21 Brooklyn, NY</div><a class="site-footer__contact site-footer__contact--email" href="mailto:info@globalbid">info@globalbid</a>
+          </div>
+          <div class="col-sm-12 col-md-5 col-lg-6">
+            <div class="site-footer__map">
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <div class="site-footer__copyright">© 2017 GlobalBid</div>
+          <div class="site-footer__social social">
+            <div class="social__item"><a class="social__link fb" href="javascript:void(0);"></a></div>
+            <div class="social__item"><a class="social__link vk" href="javascript:void(0);"></a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3_tT2fWmO8FndHY0iU4BcNri2gPqR0Us&amp;callback=initMap"></script>
+  </body>
+</html>

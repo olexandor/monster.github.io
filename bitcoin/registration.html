@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Registration</title>
+    <meta name="description" content="Registration"/><meta property="og:image" content="path/to/image.jpg">
+<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css"/><meta name="theme-color" content="#ccc">
+<meta name="msapplication-navbutton-color" content="#ccc">
+<meta name="apple-mobile-web-app-status-bar-style" content="#ccc">
+  </head>
+  <body>
+    <header class="site-header">
+      <button class="js-mobile-menu-trigger" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <div class="container">
+        <div class="site-header__top">
+          <div class="site-header__language language-select">
+            <div class="language-select__item"><a class="language-select__link active" href="javascript:void(0);">Rus</a></div>
+            <div class="language-select__item"><a class="language-select__link" href="javascript:void(0);">Eng</a></div>
+            <div class="language-select__item"><a class="language-select__link" href="javascript:void(0);">Port</a></div>
+            <div class="language-select__item"><a class="language-select__link" href="javascript:void(0);">Span</a></div>
+          </div>
+          <div class="site-header__top-right">
+            <div class="site-header__social social">
+              <div class="social__item"><a class="social__link fb" href="javascript:void(0);"></a></div>
+              <div class="social__item"><a class="social__link vk" href="javascript:void(0);"></a></div>
+            </div><a class="site-header__login" href="user-login.html">Login</a><a class="site-header__signup" href="registration.html">Signup</a>
+          </div>
+        </div>
+        <div class="site-header__bottom">
+          <div class="site-header__logo"><a class="site-logo" href="index.html"><img src="./img/icons/site-logo.png" alt="GlobalBid"/><span>GlobalBid</span></a></div><a class="site-header__proofs btn btn--small btn--orange" href="latest-payments.html">payment proofs</a>
+          <div class="site-header__nav">
+            <nav class="main-nav"><a class="site-header__login site-header__login--mobile" href="user-login.html">Login</a><a class="site-header__signup site-header__signup--mobile" href="registration.html">Signup</a>
+              <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link active" href="index.html">home</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="about-us.html">about us</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="FAQ.html">faq</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="news.html">news</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="affiliate-program.html">affiliate program</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="contact-us.html">support</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="page-head">
+      <div class="container">
+        <h1 class="page-title page-title--centered">user registration</h1>
+      </div>
+    </section>
+    <section class="site-registration">
+      <div class="container">
+        <form class="registration" action="" id="registration">
+          <input type="text" name="registration_name" placeholder="Your Full Name:" required="required"/>
+          <input type="text" name="registration_username" placeholder="Your Username:" required="required"/>
+          <input type="password" name="registration_password" placeholder="Define Password:" required="required"/>
+          <input type="password" name="registration_retype_password" placeholder="Retype Password:" required="required"/>
+          <input type="email" name="registration_email" placeholder="Your E-mail:" required="required"/>
+          <input type="email" name="registration_retype_email" placeholder="Retype E-mail:" required="required"/>
+          <input class="registration__bitcoin-address" type="text" name="registration_bitcoin_address" placeholder="Bitcoin Address:" required="required"/>
+          <input type="text" name="registration_question" placeholder="Secret question:" required="required"/>
+          <input type="text" name="registration_answer" placeholder="Secret answer:" required="required"/>
+          <label class="checkbox">
+            <input id="check-registration-terms" type="checkbox" name="registration_terms" checked="checked"/><span>I agree with <a href="javascript:void(0);">Terms and conditions</a></span>
+          </label>
+          <button class="btn-register btn" type="submit">register</button>
+        </form>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3"><a class="site-footer__logo site-logo" href="javascript:void(0);"><img src="./img/icons/site-logo.png" alt="GlobalBid"/><span>GlobalBid</span></a>
+            <ul class="site-footer__menu">
+              <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="index.html">Home</a></li>
+              <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="about-us.html">About Us</a></li>
+              <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="FAQ.html">FAQ</a></li>
+              <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="news.html">News</a></li>
+              <li class="site-footer__menu-item"><a class="site-footer__menu-link" href="affiliate-program.html">Affiliate Program</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="site-footer__info">Welcome to the website of BitPalas Limited! If you find yourself here, you are definitely in search of relia ble and profitable investment you are just at the right place since.</div><a class="site-footer__contact site-footer__contact--tel" href="tel:+18005442123">1 (800) 544-2123</a>
+            <div class="site-footer__contact site-footer__contact--location">140 New Str., 21 Brooklyn, NY</div><a class="site-footer__contact site-footer__contact--email" href="mailto:info@globalbid">info@globalbid</a>
+          </div>
+          <div class="col-sm-12 col-md-5 col-lg-6">
+            <div class="site-footer__map">
+              <div id="map"></div>
+            </div>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <div class="site-footer__copyright">© 2017 GlobalBid</div>
+          <div class="site-footer__social social">
+            <div class="social__item"><a class="social__link fb" href="javascript:void(0);"></a></div>
+            <div class="social__item"><a class="social__link vk" href="javascript:void(0);"></a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3_tT2fWmO8FndHY0iU4BcNri2gPqR0Us&amp;callback=initMap"></script>
+  </body>
+</html>
