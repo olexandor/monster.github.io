@@ -1,2 +1,2 @@
-# monster.github.io
-MONSTER - clothing store for sports
+# olexandor.github.io
+Web developer portfolio
