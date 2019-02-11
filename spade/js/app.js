@@ -22,9 +22,6 @@ function shaveText() {
 		} else if($(this).outerHeight() > 69 && $(this).next('.expand-text').length !== 0) {
 			$(this).css({'max-height' : '69px'});
 			$(this).parent().find('.expand-text').css({'display' : 'block'});
-		// } else if($(this).outerHeight() < 69) {
-		// 	$(this).css({'max-height' : 'none'});
-		// 	$(this).parent().find('.expand-text').css({'display' : 'none'});
 		}
 	});
 
@@ -39,13 +36,15 @@ function shaveText() {
 $(document).ready(function () {
 
 	// Отсчет времени - crowdsale start
-	$('.counter-time').countdown('2017/10/18', function(event) {
-		var $this = $(this).html(event.strftime(
-			'<div class="counter-time__item"><div class="counter-time__value">%D</div><div class="counter-time__title">days</div></div>' + 
-			'<div class="counter-time__item"><div class="counter-time__value">%H</div><div class="counter-time__title">hours</div></div>' + 
-			'<div class="counter-time__item"><div class="counter-time__value">%M</div><div class="counter-time__title">minutes</div></div>' +
-			'<div class="counter-time__item"><div class="counter-time__value">%S</div><div class="counter-time__title">seconds</div></div>')
-		);
+	$('.counter-time').each(function() {
+		$(this).countdown($(this).data('time'), function(event) {
+			var $this = $(this).html(event.strftime(
+				'<div class="counter-time__item"><div class="counter-time__value">%D</div><div class="counter-time__title">days</div></div>' + 
+				'<div class="counter-time__item"><div class="counter-time__value">%H</div><div class="counter-time__title">hours</div></div>' + 
+				'<div class="counter-time__item"><div class="counter-time__value">%M</div><div class="counter-time__title">minutes</div></div>' +
+				'<div class="counter-time__item"><div class="counter-time__value">%S</div><div class="counter-time__title">seconds</div></div>')
+			);
+		});
 	});
 
 	// Обрезаем текст
@@ -115,9 +114,7 @@ $(document).ready(function () {
 
 // -------------------------------------------------------------------------------------
 
-
 $(window).scroll(function () {
-
 
 });
 
@@ -154,11 +151,6 @@ $(window).load(function () {
 // -------------------------------------------------------------------------------------
 
 $(window).resize(function () {
-
-	// Обрезаем текст
-	shaveText();
-
-	shaveCenterText();
 
 });
 
