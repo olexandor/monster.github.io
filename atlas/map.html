@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+	<html lang="de">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<meta name="description" content="Ausbildungsatlas description">
+	<meta name="theme-color" content="#ccc">
+	<link rel="stylesheet" href="Css/main.css">
+</head>
+
+	<body class="map-page">
+
+	<div class="page-wrapper">
+		
+			
+
+
+<header class="page-header header ">
+	
+		<div class="header__homeback">
+			<a class="homeback-link" href="index.html">Nach Hause</a>
+		</div>
+	
+	<div class="header__logos">
+		<div class="header__logos-left">
+			<img src="./Images/logos/ausbildung-gesundheit-logo.svg" alt="AUSBILDUNG GESUNDHEIT">
+		</div>
+		<div class="header__logos-right">
+			<a href="#"><img src="./Images/logos/EU-logo.svg" alt="EU"></a>
+			<a href="#"><img src="./Images/logos/land-brandenburg-logo.svg" alt="Land Brandenburg"></a>
+			<a href="#"><img src="./Images/logos/beBerlin-logo.svg" alt="beBerlin"></a>
+		</div>
+	</div>
+	
+	<button type="button" class="mainmenu-toggle">
+		<span class="mainmenu-toggle__bar"></span>
+		<span class="mainmenu-toggle__bar"></span>
+		<span class="mainmenu-toggle__bar"></span>
+		<p>Menü öffnen</p>
+	</button>
+
+	<div class="navbar">
+		
+	<nav class="mainmenu">
+		<ul class="mainmenu__list">
+			
+				<li class="mainmenu__item">
+					<a href="index.html" class="mainmenu__link is-current">Startseite</a>
+				</li>
+			
+				<li class="mainmenu__item">
+					<a href="courses.html" class="mainmenu__link ">Ausbildung</a>
+				</li>
+			
+				<li class="mainmenu__item">
+					<a href="text-page.html" class="mainmenu__link ">Service</a>
+				</li>
+			
+				<li class="mainmenu__item">
+					<a href="map.html" class="mainmenu__link ">Ausbildungsstätten</a>
+				</li>
+			
+		</ul>
+	</nav>
+
+	</div>
+</header>
+		
+		<main class="page-main" role="main">
+			
+    <div class="map-wrapper">
+        <div class="large-map">
+            <div class="large-map__map" data-url="/JavaScript/data.json" data-marker-icon="/Images/icons/marker-dot-blue.svg" data-close-icon="/Images/icons/ico-close.svg" id="large-map"></div>
+            <div class="large-map__filter map-filter">
+                <div class="map-mobile-controls">
+                    <button type="button" class="map-mobile-controls__back">
+                        <span class="ghost">back</span>
+                    </button>
+                    <button type="button" class="map-mobile-controls__toggle">
+                        <span class="ghost">Manage menu</span>
+                        <span class="map-mobile-controls__toggle-lines">
+							<span class="map-mobile-controls__toggle-line"></span>
+							<span class="map-mobile-controls__toggle-line"></span>
+							<span class="map-mobile-controls__toggle-line"></span>
+						</span>
+                    </button>
+                </div>
+                <div class="map-filter__choosen" id="choosen-filter"></div>
+                <div class="map-filter__main">
+                    <div class="map-filter__controls">
+                        <ul class="map-filter__panels">
+                            
+                            
+                                <li class="map-filter__panels-item -therapy">
+                                    <a href="#therapy" class="map-filter__panels-link hyphenate">
+                                        Pflege und Therapieg
+                                    </a>
+                                    
+                                        <div class="map-filter__panels-block" id="therapy">
+                                            <ul class="map-filter__categories">
+                                                
+                                                    <li class="map-filter__categories-item" data-type="categories">Accelerator/ Inkubator</li>
+                                                
+                                            </ul>
+                                        </div>
+                                    
+                                </li>
+                            
+                                <li class="map-filter__panels-item -administration">
+                                    <a href="#administration" class="map-filter__panels-link hyphenate">
+                                        Gesundheitsverwaltung und Handel
+                                    </a>
+                                    
+                                        <div class="map-filter__panels-block" id="administration">
+                                            <ul class="map-filter__categories">
+                                                
+                                                    <li class="map-filter__categories-item" data-type="categories">Cross-Sector</li>
+                                                
+                                                    <li class="map-filter__categories-item" data-type="categories">Mobility</li>
+                                                
+                                                    <li class="map-filter__categories-item" data-type="categories">IoT</li>
+                                                
+                                                    <li class="map-filter__categories-item" data-type="categories">Tech</li>
+                                                
+                                            </ul>
+                                        </div>
+                                    
+                                </li>
+                            
+                                <li class="map-filter__panels-item -technology">
+                                    <a href="#technology" class="map-filter__panels-link hyphenate">
+                                        Technik und Handwerk
+                                    </a>
+                                    
+                                        <div class="map-filter__panels-block" id="technology">
+                                            <ul class="map-filter__categories">
+                                                
+                                                    <li class="map-filter__categories-item" data-type="categories">AtomLeap</li>
+                                                
+                                                    <li class="map-filter__categories-item" data-type="categories">GmbH</li>
+                                                
+                                                    <li class="map-filter__categories-item" data-type="categories">Axel Springer</li>
+                                                
+                                            </ul>
+                                        </div>
+                                    
+                                </li>
+                            
+                                <li class="map-filter__panels-item -services">
+                                    <a href="#services" class="map-filter__panels-link hyphenate">
+                                        Gesundheitstourismus, Service und Ernährung
+                                    </a>
+                                    
+                                        <div class="map-filter__panels-block" id="services">
+                                            <ul class="map-filter__categories">
+                                                
+                                                    <li class="map-filter__categories-item" data-type="categories">IoT</li>
+                                                
+                                                    <li class="map-filter__categories-item" data-type="categories">Tech</li>
+                                                
+                                                    <li class="map-filter__categories-item" data-type="categories">Mobility</li>
+                                                
+                                            </ul>
+                                        </div>
+                                    
+                                </li>
+                            
+                            <li class="map-filter__panels-item">
+                                <a href="#all" class="map-filter__panels-link">Alle</a>
+                            </li>
+                            
+                                
+                                
+                                    
+                                        
+                                            
+                                            
+                                                
+                                                
+                                                    
+												
+                                                
+                                            
+                                        
+                                        
+                                            
+                                            
+                                            
+                                        
+                                        
+                                            
+                                            
+                                                
+                                                
+                                                    
+												
+                                                
+                                            
+                                            
+                                                
+                                                    
+                                                    
+                                                    
+                                                
+                                            
+                                        
+                                    
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="preloader -is-visible">
+            <div class="preloader__inner">
+                <img src="./Images/icons/icon-spinner.svg" alt="Loading...">
+            </div>
+        </div>
+    </div>
+
+		</main>
+		
+	</div>
+	
+		<div class="cookiebanner">
+    <div class="cookiebanner__inner">
+      <div class="cookiebanner__content">
+          <p>Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. Weitere Informationen zu Cookies erhalten Sie in unserer Datenschutzerklärung.</p>
+      </div>
+      <div class="cookiebanner__actions">
+          <a href="#" class="cookiebanner__accept">Einverstanden</a>
+          <button type="button" class="cookiebanner__close">Close</button>
+      </div>
+    </div>
+</div>
+	
+	
+		
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKVjBx5vxZBaz0W_Xq3LXpEc3NUkYkjyA" defer></script>
+
+<script src="JavaScript/libs.min.js" defer></script>
+<script src="JavaScript/main.js" defer></script>
+	
+</body>
+</html>
