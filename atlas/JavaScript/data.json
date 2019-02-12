@@ -2,7 +2,7 @@
   {
     "ID": 1,
     "class": "therapy",
-    "marker": "/Images/icons/marker-green.svg",
+    "marker": "./Images/icons/marker-green.svg",
     "closeText": "Schließen",
     "categories": "Accelerator/ Inkubator, Cross-Sector, Mobility, IoT, Tech, AtomLeap, GmbH, Axel Springer, 10696, 10999, 10969",
     "Name": "APX (Axel Springer/ Porsche)",
@@ -16,7 +16,7 @@
   {
     "ID": 2,
     "class": "therapy",
-    "marker": "/Images/icons/marker-green.svg",
+    "marker": "./Images/icons/marker-green.svg",
     "closeText": "Schließen",
     "categories": "Accelerator/ Inkubator, Cross-Sector, Mobility, IoT, Tech, 10969",
     "Name": "AtomLeap",
@@ -30,7 +30,7 @@
   {
     "ID": 3,
     "class": "technology",
-    "marker": "/Images/icons/marker-red.svg",
+    "marker": "./Images/icons/marker-red.svg",
     "closeText": "Schließen",
     "categories": "Accelerator/ Inkubator, Cross-Sector, Mobility, IoT, Tech, AtomLeap, GmbH, Axel Springer, 10696, 10999, 10969",
     "Name": "Axel Springer Plug and Play Accelerator",
@@ -44,7 +44,7 @@
   {
     "ID": 4,
     "class": "technology",
-    "marker": "/Images/icons/marker-red.svg",
+    "marker": "./Images/icons/marker-red.svg",
     "closeText": "Schließen",
     "categories": "IoT, Tech, AtomLeap, GmbH, Axel Springer, 10696, 10999, 10969",
     "Name": "B.Braun Accelerator",
@@ -58,7 +58,7 @@
   {
     "ID": 5,
     "class": "technology",
-    "marker": "/Images/icons/marker-red.svg",
+    "marker": "./Images/icons/marker-red.svg",
     "closeText": "Schließen",
     "categories": "Accelerator/ Inkubator, Tech, AtomLeap, GmbH, Axel Springer, 10696, 10999, 10969",
     "Name": "Berlin Startup Academy",
@@ -72,7 +72,7 @@
   {
     "ID": 6,
     "class": "administration",
-    "marker": "/Images/icons/marker-blue.svg",
+    "marker": "./Images/icons/marker-blue.svg",
     "closeText": "Schließen",
     "categories": "Accelerator/ Inkubator, Cross-Sector, Mobility, IoT, 10999, 10969",
     "Name": "Beyond 1435",
@@ -86,7 +86,7 @@
   {
     "ID": 7,
     "class": "administration",
-    "marker": "/Images/icons/marker-blue.svg",
+    "marker": "./Images/icons/marker-blue.svg",
     "closeText": "Schließen",
     "categories": "Accelerator/ Inkubator, Cross-Sector, GmbH, Axel Springer, 10696, 10999, 10969",
     "Name": "Cisco Open Berlin",
@@ -100,7 +100,7 @@
   {
     "ID": 8,
     "class": "services",
-    "marker": "/Images/icons/marker-yellow.svg",
+    "marker": "./Images/icons/marker-yellow.svg",
     "closeText": "Schließen",
     "categories": "Cross-Sector, Mobility, IoT, Tech, AtomLeap, 10969",
     "Name": "Clean Tech Business Park Berlin-Marzahn",
@@ -114,7 +114,7 @@
   {
     "ID": 9,
     "class": "services",
-    "marker": "/Images/icons/marker-yellow.svg",
+    "marker": "./Images/icons/marker-yellow.svg",
     "closeText": "Schließen",
     "categories": "Accelerator/ Inkubator, IoT, Tech, AtomLeap, GmbH, 10999, 10969",
     "Name": "DB Mindbox",
@@ -128,7 +128,7 @@
   {
     "ID": 10,
     "class": "services",
-    "marker": "/Images/icons/marker-yellow.svg",
+    "marker": "./Images/icons/marker-yellow.svg",
     "closeText": "Schließen",
     "categories": "Axel Springer, 10696, 10999, 10969",
     "Name": "Digital Imagination Challenge",
